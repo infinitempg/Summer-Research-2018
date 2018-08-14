@@ -131,3 +131,13 @@ PyRAF will pop out a plot of the spectrum. You may need to zoom in a bit as well
 ![plot](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/9_plot.png)
 
 ### Repeating for other peaks
+
+Before you start anything, open up `uvir_lowres.py` and change the second comment block to `False` and add `os.chdir('redux')` to the top of the third comment block. Additionally, make a copy of your generated science image (`*.ms.fits`) and save it in another folder, so you will have it in case.
+
+Now, go back out to xgterm and enter `ds9 redux/%sci_01_B.fits`, where `%sci` is the name of your science image. This will open up that image into DS9, where you will need to change the scale to something more reasonable (such as -10 to 90 in this case) that way you can look for the H Alpha emissions (should be near top right). Hover over one of the bright blobs and find its X coordinate on the image. Mark this down, close DS9, and reopen PyRAF.
+
+![DS9](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/10_ds9.png)
+
+Once you're in, hit `ENTER` three times to edit the aperture. Then, type `:line ####`, where `####` is the X coordinate you marked down earlier. This should change the spectrum a bit - zoom in to any of the peaks and begin the same process with each of them. Each of these peaks is redshifted/blueshifted, and thus can help us determine a speed. **Note:** the red band should already be done, so you do not have to re-edit the apertures, but you do have to go through the process.
+
+Again, mark down the peak wavelength, and then close it out and duplicate the `ms.fits` file so it is backed up. Repeat this for all of the peaks.
