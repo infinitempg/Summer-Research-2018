@@ -52,13 +52,82 @@ Next, you will be asked if you want to resize the apertures. Choose `yes`.
 
 Lastly, you will be asked if you want to edit the apertures. Choose `yes`.
 
-This should now pop open a PyRAF interactive window displaying a gaussian curve. You can zoom in on certain areas of the window using `w-e` on the bottom left of your zoomed in region and then `e` at the top right.
+This should now pop open a PyRAF interactive window displaying a gaussian curve. You can zoom in on certain areas of the window using `w-e` on the bottom left of your zoomed in region and then `e` at the top right. (`w-a` will return you back to the default view.)
 
-![aperture image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/1%20aperture.png)
+![aperture image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/1_aperture.png)
 
 
-You can now delete the previous aperture (if you want) by pressing `d`, and then create a new one by pressing `n` when your cursor is lined up with the peak of the curve. Be sure to change your upper and lower bounds by typing `:upper 10` and `:lower -10`.
+You can now delete the previous aperture (if you want) by pressing `d`, and then create a new one by pressing `n` when your cursor is lined up with the peak of the curve. Be sure to change your upper and lower bounds by typing `:upper ##` and `:lower -##`, and make sure they are the same for both colors.
 
 We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s`. Press `q` to escape this window and then `b` again to ensure the new background level is set correctly.
 
-If everything is done correctly, you can `q` out again. iPython will ask you if you want to trace apertures, choose `yes`. It will then ask if you would like to fit the traced positions interactively, choose `yes`. Last, it will ask if you want to fit the curve to the aperture interactively, choose `yes`. Now we
+![background image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/2_background.png)
+
+If everything is done correctly, you can `q` out again. iPython will ask you if you want to trace apertures, choose `yes`. It will then ask if you would like to fit the traced positions interactively, choose `yes`. Last, it will ask if you want to fit the curve to the aperture interactively, choose `yes`. Now we can create a fit for this curve by typing `:order 4` (the number can change depending on how high an order you need to fit it well). Press `f` to visually inspect the fit, and if it is good, press `q` to escape the window. PyRAF will then ask if you would like to write the apertures to the database, choose `yes`. It will then ask if you want to extract the spectra, choose `yes`. Lastly, it will ask if you want to clobber the existing output image, select `yes`.
+
+![fitting image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/3_fitting.png)
+
+This portion needs to be completed twice, once for the blue portion and once for the red portion.
+
+**Removing Stellar Absorption Features**
+
+After finishing with the apertures, PyRAF will now let us remove absorption features in the spectrum. Press `ENTER` to plot the image. You can again zoom in on the regions with `w-e-e` and remove absorption lines by pressing `x` on each side, and then `r` to force a re-draw.
+
+![stellar features](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/4_absorption.png)
+
+When you have removed all of the major absorption lines, press `i` to save the image. Be sure to save this image as `a%s.ms.fits`, where `%s` is the name of the FITS file you are working with (e.g. `aBD19445_01_B.ms.fits`). **NOTE:** If you screw this up, you will have to start over.
+
+Use `q` to escape, and then hit `ENTER` to plot the absorption lines alone. We want to remove anything that isn't a telluric line using `x-x`. Listed below are wavelengths where you need to delete lines.
+
+Blue Band:
+* 3420 → 5500
+* 6050 → 6250
+* 6360 → 6450
+* 6530 → 6840
+
+Red Band:
+* 7410 → 7560
+* 8410 → 8800
+
+![removing lines](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/5_removelines.png)
+
+When you have finished removing the stellar features, press `i` to save the image as `telluric.B/R.%s.fits` as color appropriate. You may need to overwrite, choose `yes`. Press `q` to escape.
+
+Repeat this for both colors.
+
+**Bandpasses**
+
+After finishing with the absorption features, PyRAF will ask if you want to edit the bandpasses. Choose `yes`, and it will open up a window. We want to use `d` to delete any boxes that are below the line. When finished, press `q` to save and escape.
+
+![bandpasses](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/6_bandpasses.png)
+
+Repeat this for both colors.
+
+**Sensitivity Function**
+
+Now PyRAF moves us on to fitting the apertures. Choose `yes` to open the window. We will see two graphs, one for Sensitivity vs Wavelength on top and one for Sensitivity Residuals vs Wavelength on the bottom. Hover your cursor to the bottom graph and start deleting outlying points with `d-p`. It should automatically move your cursor to the next nearest point when you press `d`, but you may need to move it when you have finished with a region. Press `g` to re-fit and re-draw the top graph. If you make a mistake, you can use `u-p` to undelete a point.
+
+![sensitivity](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/7_sensitivity.png)
+
+When you are finished, press `q` to save and escape. Repeat this for both colors.
+
+###Science Object
+Now we move on to our science object. If you have already completed the process for the standard star, make sure to go into `uvir_lowres` and change the second code block to `False`, as well as going into the third code block and adding `os.chdir('redux')` to the front.
+
+First, we need to set our apertures again. This process is identical to the one for the standard star, so I'm not going to rewrite that.
+
+The program then does a lot of heavy lifting until it prompts you to search the telluric function interactively. Choose `yes`, and PyRAF will open a window displaying the telluric function.
+
+**Telluric Function**
+
+We want to minimize the lines on the top graph to as close to flat as possible in the regions selected. Use `x` to shift the features and `y` to scale them until you get them as close to flat as possible. (You can also use `:scale #` and `:shift #` to manually set them.) When finished, press `q` to close out.
+
+![telluric function](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/8_telluric.png)
+
+**Plot**
+
+PyRAF will pop out a plot of the spectrum. You may need to zoom in a bit as well as connect the two colors together, but in general it should line up nicely. H Alpha should appear between 6500 A and 7000 A. Zoom in to the peak, and determine the highest point by either eyeballing it or using `k` on either side to create a Gaussian. Make sure to mark this down! Then, hit `q` to escape.
+
+![plot](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/9_plot.png)
+
+### Repeating for other peaks
