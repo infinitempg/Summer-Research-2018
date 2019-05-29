@@ -5,6 +5,7 @@ The goal of this project is to determine the "kick speed" of a star which was in
 
 ## Getting to the files
 1. Open XQuartz and open a new xgterm - `xgterm -sb -bg black -fg green` (This gives a dark color scheme as well)
+**Update:** this is now aliased as `xgterm`. See [here](https://iraf.net/forum/viewtopic.php?showtopic=1469888&fromblock=yes) for details.
 2. Once in xgterm, you need to `cd` to the correct location - in this case the files are all in `/Desktop/Deimos_HDD/CarPy/`. Folders with relevant Type IIn SNe are appended with `_IIn`.
 
 ## Editing files
@@ -111,7 +112,7 @@ Now PyRAF moves us on to fitting the apertures. Choose `yes` to open the window.
 
 When you are finished, press `q` to save and escape. Repeat this for both colors.
 
-###Science Object
+### Science Object
 Now we move on to our science object. If you have already completed the process for the standard star, make sure to go into `uvir_lowres` and change the second code block to `False`, as well as going into the third code block and adding `os.chdir('redux')` to the front.
 
 First, we need to set our apertures again. This process is identical to the one for the standard star, so I'm not going to rewrite that.
