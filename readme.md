@@ -9,7 +9,7 @@ The goal of this project is to determine the "kick speed" of a star which was in
 2. Once in xgterm, you need to `cd` to the correct location - in this case the files are all in `/Desktop/Deimos_HDD/CarPy/`. Folders with relevant Type IIn SNe are appended with `_IIn`.
 
 ## Editing files
-I prefer doing this in Atom, but you could use `vim` or some other text editor inside terminal. Anyways, go to the `DEIMOS` folder in the `CarPy` directory and open up `uvir_lowres.py`, `deimos_carpy.py`, and `iqutils.py` - all three need to be edited.
+I prefer doing this in Atom, but you could use `vim` or some other text editor inside terminal. Anyways, go to the folder of the object in the `CarPy` directory and open up `uvir_lowres.py`, `deimos_carpy.py`, and `iqutils.py` - all three need to be edited.
 
 Inside `uvir_lowres`:
 * Change `standard1` to the standard star we are calibrating to (typically starts with HD or BD)
