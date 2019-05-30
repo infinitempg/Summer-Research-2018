@@ -23,6 +23,7 @@ Inside `uvir_lowres`:
 
 Inside `deimos_carpy`:
 * Change `import pyfits` to `from astropy.io import fits as pyfits`
+* In the beginning of the file, change all `os.environ['keck']` to `os.environ['HOME'] + '/Desktop'`
 * In `deimos_standard`: set all `if` statements to `True`
 
 *I will copy the functions `deimos_standard` and `deimos_extract` below, as I've included more print functions so that I know where I am.*
@@ -37,6 +38,7 @@ Now that we are in the correct directory, we can start up PyRAF:
 source activate iraf27
 pyraf --ipython
 ```
+
 This opens up PyRAF in an iPython console. Now we import our file:
 ```python
 import uvir_lowres
@@ -60,11 +62,13 @@ This should now pop open a PyRAF interactive window displaying a gaussian curve.
 
 You can now delete the previous aperture (if you want) by pressing `d`, and then create a new one by pressing `n` when your cursor is lined up with the peak of the curve. Be sure to change your upper and lower bounds by typing `:upper ##` and `:lower -##`, and make sure they are the same for both colors.
 
-We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s`. Press `q` to escape this window and then `b` again to ensure the new background level is set correctly.
+We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s` on each side. Press `q` to escape this window and then `b` again to ensure the new background level is set correctly.
 
 ![background image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/2_background.png)
 
-If everything is done correctly, you can `q` out again. iPython will ask you if you want to trace apertures, choose `yes`. It will then ask if you would like to fit the traced positions interactively, choose `yes`. Last, it will ask if you want to fit the curve to the aperture interactively, choose `yes`. Now we can create a fit for this curve by typing `:order 4` (the number can change depending on how high an order you need to fit it well). Press `f` to visually inspect the fit, and if it is good, press `q` to escape the window. PyRAF will then ask if you would like to write the apertures to the database, choose `yes`. It will then ask if you want to extract the spectra, choose `yes`. Lastly, it will ask if you want to clobber the existing output image, select `yes`.
+If everything is done correctly, you can `q` out again. iPython will ask you if you want to trace apertures, choose `yes`. It will then ask if you would like to fit the traced positions interactively, choose `yes`. Last, it will ask if you want to fit the curve to the aperture interactively, choose `yes`.
+
+Now we can create a fit for this curve by typing `:order 4` (the number can change depending on how high an order you need to fit it well). Press `f` to visually inspect the fit, and if it is good, press `q` to escape the window. PyRAF will then ask if you would like to write the apertures to the database, choose `yes`. It will then ask if you want to extract the spectra, choose `yes`. Lastly, it will ask if you want to clobber the existing output image, select `yes`.
 
 ![fitting image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/3_fitting.png)
 
