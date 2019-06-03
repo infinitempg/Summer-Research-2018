@@ -11,14 +11,14 @@ The goal of this project is to determine the "kick speed" of a star which was in
 I prefer doing this in Atom, but you could use `vim` or some other text editor inside terminal. Anyways, open up `uvir_lowres.py`, `deimos_carpy.py`, and `iqutils.py` - all three need to be edited.
 
 Inside `uvir_lowres`:
-* Change `standard1` to the standard star we are calibrating to (typically starts with HD or BD)
+* Change `standard1` to the standard star we are calibrating to (this can be found in the `redux` folder, it typically starts with HD or BD)
 * Set the first code block to `False`
 * Set the second code block (`deimos_standard`) to `True`
   * Add `os.chdir('redux')` to the beginning of the code block
 * Set the third code block (`deimos_extract`) to `True`
   * Add (and then comment for now) `os.chdir('redux')` to the beginning of the code block
   * Set `science` to be the SN you are studying
-    * You can find the name by looking in the first code block.
+    * You can find this by looking in the `redux` folder as well.
 
 Inside `deimos_carpy`:
 * Change `import pyfits` to `from astropy.io import fits as pyfits`
@@ -59,7 +59,7 @@ This should now pop open a PyRAF interactive window displaying a gaussian curve.
 
 You can now delete the previous aperture (if you want) by pressing `d`, and then create a new one by pressing `n` when your cursor is lined up with the peak of the curve. Be sure to change your upper and lower bounds by typing `:upper ##` and `:lower -##`, and make sure they are the same for both colors.
 
-We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s`. Press `q` to escape this window and then `b` again to ensure the new background level is set correctly.
+We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s`. Press `f` to ensure the background is set correctly and then `q` to escape the window.
 
 ![background image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/2_background.png)
 
