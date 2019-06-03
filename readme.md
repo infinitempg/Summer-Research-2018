@@ -5,7 +5,9 @@ The goal of this project is to determine the "kick speed" of a star which was in
 
 ## Getting to the files
 1. Open XQuartz and open a new xgterm - `xgterm -sb -bg black -fg green` (This gives a dark color scheme as well)
-**Update:** this is now aliased as `xgterm`. See [here](https://iraf.net/forum/viewtopic.php?showtopic=1469888&fromblock=yes) for details.
+
+**Update:** this is now aliased as `xgterm`. See [here](https://iraf.net/forum/viewtopic.php?showtopic=1469888&fromblock=yes) for details. **Alternatively, you could just skip this and run everything in terminal.**
+
 2. Once in xgterm, you need to `cd` to the correct location - in this case the files are all in `/Desktop/Deimos_HDD/CarPy/`. Folders with relevant Type IIn SNe are appended with `_IIn`.
 
 ## Editing files
