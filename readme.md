@@ -41,6 +41,8 @@ source activate iraf27
 pyraf --ipython
 ```
 
+**Note:** If PyRAF complains about `chkupdate` not working, you need to go to your IRAF directory (`~/iraf`) and comment out `chkupdate` in the `login.cl` file.
+
 This opens up PyRAF in an iPython console. Now we import our file:
 ```python
 import uvir_lowres
@@ -64,7 +66,7 @@ This should now pop open a PyRAF interactive window displaying a gaussian curve.
 
 You can now delete the previous aperture (if you want) by pressing `d`, and then create a new one by pressing `n` when your cursor is lined up with the peak of the curve. Be sure to change your upper and lower bounds by typing `:upper ##` and `:lower -##`, and make sure they are the same for both colors.
 
-We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s` on each side. Press `q` to escape this window and then `b` again to ensure the new background level is set correctly.
+We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s` on each side. Press `f` to ensure the new background level is set correctly, then press `q` to escape.
 
 ![background image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/2_background.png)
 
