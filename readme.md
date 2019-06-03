@@ -5,10 +5,13 @@ The goal of this project is to determine the "kick speed" of a star which was in
 
 ## Getting to the files
 1. Open XQuartz and open a new xgterm - `xgterm -sb -bg black -fg green` (This gives a dark color scheme as well)
+
+**Update:** this is now aliased as `xgterm`. See [here](https://iraf.net/forum/viewtopic.php?showtopic=1469888&fromblock=yes) for details. **Alternatively, you could just skip this and run everything in terminal.**
+
 2. Once in xgterm, you need to `cd` to the correct location - in this case the files are all in `/Desktop/Deimos_HDD/CarPy/`. Folders with relevant Type IIn SNe are appended with `_IIn`.
 
 ## Editing files
-I prefer doing this in Atom, but you could use `vim` or some other text editor inside terminal. Anyways, open up `uvir_lowres.py`, `deimos_carpy.py`, and `iqutils.py` - all three need to be edited.
+I prefer doing this in Atom, but you could use `vim` or some other text editor inside terminal. Anyways, go to the folder of the object in the `CarPy` directory and open up `uvir_lowres.py`, `deimos_carpy.py`, and `iqutils.py` - all three need to be edited.
 
 Inside `uvir_lowres`:
 * Change `standard1` to the standard star we are calibrating to (this can be found in the `redux` folder, it typically starts with HD or BD)
@@ -22,6 +25,7 @@ Inside `uvir_lowres`:
 
 Inside `deimos_carpy`:
 * Change `import pyfits` to `from astropy.io import fits as pyfits`
+* In the beginning of the file, change all `os.environ['keck']` to `os.environ['HOME'] + '/Desktop'`
 * In `deimos_standard`: set all `if` statements to `True`
 
 *I will copy the functions `deimos_standard` and `deimos_extract` below, as I've included more print functions so that I know where I am.*
@@ -36,6 +40,7 @@ Now that we are in the correct directory, we can start up PyRAF:
 source activate iraf27
 pyraf --ipython
 ```
+
 This opens up PyRAF in an iPython console. Now we import our file:
 ```python
 import uvir_lowres
@@ -59,11 +64,13 @@ This should now pop open a PyRAF interactive window displaying a gaussian curve.
 
 You can now delete the previous aperture (if you want) by pressing `d`, and then create a new one by pressing `n` when your cursor is lined up with the peak of the curve. Be sure to change your upper and lower bounds by typing `:upper ##` and `:lower -##`, and make sure they are the same for both colors.
 
-We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s`. Press `f` to ensure the background is set correctly and then `q` to escape the window.
+We now want to set the background by pressing `b` to move to that frame. Delete the previous background by pressing `t` and then set new ones to the left and right of the curve with `s-s` on each side. Press `q` to escape this window and then `b` again to ensure the new background level is set correctly.
 
 ![background image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/2_background.png)
 
-If everything is done correctly, you can `q` out again. iPython will ask you if you want to trace apertures, choose `yes`. It will then ask if you would like to fit the traced positions interactively, choose `yes`. Last, it will ask if you want to fit the curve to the aperture interactively, choose `yes`. Now we can create a fit for this curve by typing `:order 4` (the number can change depending on how high an order you need to fit it well). Press `f` to visually inspect the fit, and if it is good, press `q` to escape the window. PyRAF will then ask if you would like to write the apertures to the database, choose `yes`. It will then ask if you want to extract the spectra, choose `yes`. Lastly, it will ask if you want to clobber the existing output image, select `yes`.
+If everything is done correctly, you can `q` out again. iPython will ask you if you want to trace apertures, choose `yes`. It will then ask if you would like to fit the traced positions interactively, choose `yes`. Last, it will ask if you want to fit the curve to the aperture interactively, choose `yes`.
+
+Now we can create a fit for this curve by typing `:order 4` (the number can change depending on how high an order you need to fit it well). Press `f` to visually inspect the fit, and if it is good, press `q` to escape the window. PyRAF will then ask if you would like to write the apertures to the database, choose `yes`. It will then ask if you want to extract the spectra, choose `yes`. Lastly, it will ask if you want to clobber the existing output image, select `yes`.
 
 ![fitting image](https://github.com/infinitempg/Summer-Research-2018/blob/master/images/3_fitting.png)
 
@@ -111,7 +118,7 @@ Now PyRAF moves us on to fitting the apertures. Choose `yes` to open the window.
 
 When you are finished, press `q` to save and escape. Repeat this for both colors.
 
-###Science Object
+### Science Object
 Now we move on to our science object. If you have already completed the process for the standard star, make sure to go into `uvir_lowres` and change the second code block to `False`, as well as going into the third code block and adding `os.chdir('redux')` to the front.
 
 First, we need to set our apertures again. This process is identical to the one for the standard star, so I'm not going to rewrite that.
