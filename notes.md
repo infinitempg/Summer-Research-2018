@@ -2,7 +2,7 @@
 
 ## 6/3
 
-`DEIMOS_070122_IIn`:
+### `DEIMOS_070122_IIn`
 * Producing error `Couldn't open input file: BD19445_01_B.fits` - causes fatal error.
 
   Here's the full error:
@@ -79,7 +79,25 @@
   ```
   I'm going to move on from this folder for now, just wanted to leave a note of it.
 
-`DEIMOS_060427_IIn`:
+### `DEIMOS_060427_IIn`
 
 * ~~error with tellurics?~~ jk i'm dum dum
 * apparent problem with creating Gaussian (using `k`) at the very last spectrum?
+
+## 6/4
+
+### `DEIMOS_060427_IIn`
+
+Okay now time to finish out `DEIMOS_060427_IIn`. Other peak is at `x = 3674`. I'm going to try and start again from the beginning though. I'm sticking all of the data in a Google Sheet for now.
+
+Still getting a problem using `k` at the very end for the spectrum.
+
+Not sure what to make of the results - doesn't seem to change much???
+
+### `DEIMOS_101107_IIn`
+
+Two SN here: `SN_2010jl` and `SN_2009ip`.
+
+The standard star has a really weird aperture...
+
+![](/images/1_aperture.png)
