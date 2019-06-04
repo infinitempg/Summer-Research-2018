@@ -94,10 +94,40 @@ Still getting a problem using `k` at the very end for the spectrum.
 
 Not sure what to make of the results - doesn't seem to change much???
 
+![](/images/SN2006bo.png)
+
+Second peak:
+
+![](/images/SN2006bo_b.png)
+
 ### `DEIMOS_101107_IIn`
 
 Two SN here: `SN_2010jl` and `SN_2009ip`.
 
-The standard star has a really weird aperture...
+The standard star has a really weird aperture... though it's the same as the one for `DEIMOS_060427_IIn`? (`BD174708`)
 
-![](/images/1_aperture.png)
+![](/images/BD174708_weird_aperture.png)
+
+I'm just gonna work with the peak of the graph.
+
+I got the `k` Gaussian to work for a bit. Now it's broken again????
+
+The results aren't terribly interesting either?
+
+![](/images/SN2010jl.png)
+
+`SN_2009ip` is not a nice spectrum. ![](/images/SN09weird.png)
+
+### `DEIMOS_061223_IIn`
+
+~~Double peaked SN (kind of?)~~ Other lines don't have double peak
+
+**note:** used +/- 10 for limits
+
+Again not very interesting...
+
+![](/images/SN2005kd.png)
+
+Okay it looks like the world might end out there so I'd better go home now...
+
+## 6/5
