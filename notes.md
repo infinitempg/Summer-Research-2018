@@ -116,7 +116,9 @@ The results aren't terribly interesting either?
 
 ![](/images/SN2010jl.png)
 
-`SN_2009ip` is not a nice spectrum. ![](/images/SN09weird.png)
+`SN_2009ip` is not a nice spectrum.
+
+![](/images/SN09weird.png)
 
 ### `DEIMOS_061223_IIn`
 
@@ -159,6 +161,7 @@ Seems like they're defining home differently. In iPython setting `cd home` bring
 Looks like I have to go into `login.cl` (or at least copy it to this directory) - that seems to have worked.
 
 It has some funny looking residuals -
+
 ![](/images/110929_weird_residuals.png)
 
 I might want to re-do this just in case.
