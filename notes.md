@@ -131,3 +131,67 @@ Again not very interesting...
 Okay it looks like the world might end out there so I'd better go home now...
 
 ## 6/5
+
+### `DEIMOS_050211_IIn`
+
+No standard star - can't do anything? Do I have to do the first code block in `uvir_lowres` to make it?
+
+### `DEIMOS_051005_IIn`
+
+No standard star or SN fits file in the `redux` folder.
+
+### `DEIMOS_070216_IIn`
+
+Nothing in the `redux` folder.
+
+### `DEIMOS_110801_IIn`
+
+No SN fits file in the `redux` folder, no `uvir_lowres.py` file (though I'm sure I could duplicate one from a different folder).
+
+### `DEIMOS_110929_IIn`
+
+Running into error after tellurics - `ERROR (741, "Cannot open file (home$extinct/maunakeaextinct.dat)")`
+
+I can't see any difference in the code between ones that worked and this one - they all have `extinction='home$extinct/maunakeaextinct.dat'`.
+
+Seems like they're defining home differently. In iPython setting `cd home` brings me to `/Users/mike/iraf` for this directory but to `../CarPy` in the other directory.
+
+Looks like I have to go into `login.cl` (or at least copy it to this directory) - that seems to have worked.
+
+It has some funny looking residuals -
+![](/images/110929_weird_residuals.png)
+
+I might want to re-do this just in case.
+
+~~Ran into a `Can't get image SN2010jp.ms.fits` error, so that's off the table. That file is not in the `redux` folder. It's a shame - the `SN_2010jp_01_B.fits` file looks interesting. But it's only trying to remove it - maybe I can just comment that out?~~ jk am dum dum and forgot the `_`
+
+Weird R aperture for line 2050: ![](/images/SN10weird.png)
+
+This is kind of similar to one of the ones from yesterday. Maybe try shifting the line?
+
+Seems like this is coming from the actual fits file:
+
+![](/images/SN10Rweird.png)
+
+### `DEIMOS_120923_IIn`
+
+`SN_2008en` has the same problem with the apertures.
+
+`SN_2009ip` returned a "segmentation violation" when it tries to do the telluric. Not sure why it's doing this, but it's repeated.
+
+### `DEIMOS_121015_IIn`
+
+Nothing in `redux`.
+
+### `DEIMOS_121115_IIn`
+
+All of the SN files are not useful. For some of them, the `R` or `B` is the only one that's useful, while the other isn't - perhaps I could just ignore those that aren't useful
+
+
+### `DEIMOS_130217_IIn`
+
+Two standards? `HD19445` and `HD84937`.
+
+Not very interesting again.
+
+![](/images/SN_2013W.png)

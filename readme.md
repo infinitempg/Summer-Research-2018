@@ -28,12 +28,14 @@ Inside `deimos_carpy`:
 * In the beginning of the file, change all `os.environ['keck']` to `os.environ['HOME'] + '/Desktop'`
 * In `deimos_standard`: set all `if` statements to `True`
 
-*I will copy the functions `deimos_standard` and `deimos_extract` below, as I've included more print functions so that I know where I am.*
-
 Inside `iqutils`:
 * Change `import pyfits` to `from astropy.io import fits as pyfits`
 
+Additionally, you need to make sure that there is a `login.cl` file in the directory. You can get one from the `CarPy` directory.
+
 ## PyRAF
+
+**Note:** For best practices, close out PyRAF using `Ctrl-D`, not `Ctrl-Z`.
 
 Now that we are in the correct directory, we can start up PyRAF:
 ```
