@@ -201,4 +201,16 @@ Not very interesting again.
 
 ### TLDR
 
-[test](#`DEIMOS_110929_IIn`)
+* [`DEIMOS_050211_IIn`](#deimos_050211_iin) - bad - No standard star
+* [`DEIMOS_051005_IIn`](#deimos_051005_iin) - bad - No standard star or SN
+* [`DEIMOS_060427_IIn`](#deimos_060427_iin) - Works
+* [`DEIMOS_061223_IIn`](#deimos_061223_iin) - Works
+* [`DEIMOS_070122_IIn`](#deimos_070122_iin) - bad - Error reading a file
+* [`DEIMOS_070216_IIn`](#deimos_070216_iin) - bad - Nothing in `redux`
+* [`DEIMOS_101107_IIn`](#deimos_101107_iin) - Works - `SN_2009ip` aperture problems
+* [`DEIMOS_110801_IIn`](#deimos_110801_iin) - bad - No SN or `uvir_lowres.py`
+* [`DEIMOS_110929_IIn`](#deimos_110929_iin) - bad - R file aperture problems
+* [`DEIMOS_120923_IIn`](#deimos_120923_iin) - bad - `SN_2008en` has aperture issues, `SN_2009ip` returned a segmentation violation
+* [`DEIMOS_121015_IIn`](#deimos_121015_iin) - bad - Nothing in `redux`
+* [`DEIMOS_121115_IIn`](#deimos_121115_iin) - bad - SN files aperture problems
+* [`DEIMOS_130217_IIn`](#deimos_130217_iin) - Works
