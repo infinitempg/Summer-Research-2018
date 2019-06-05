@@ -171,7 +171,7 @@ This is kind of similar to one of the ones from yesterday. Maybe try shifting th
 
 Seems like this is coming from the actual fits file:
 
-![](/images/SN10Rweird.png)
+![SN10Rweird](/images/SN10Rweird.png)
 
 ### `DEIMOS_120923_IIn`
 
