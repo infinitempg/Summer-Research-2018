@@ -32,3 +32,10 @@ Yup I wasn't clobbering. Ok here we go:
 ~~I think instead of doing it linearly across the image, should just do the big peaks.~~ This didn't really make a difference:
 
 ![](/images/sn07gauss2.png)![](/images/sn07max2.png)
+
+## What to do next
+
+* Plot the peak wavelengths vs aperture on to the image using `APLPy`
+* Get a supernova that has narrower lines (they should be there somewhere, Pat had them before)
+* Interpolate the peaks using `spline` or something, compare it to the location of the SN.
+  * Can use line of sight velocity from the shift in wavelength to determine the difference in speed.
