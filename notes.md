@@ -79,18 +79,13 @@
   ```
   I'm going to move on from this folder for now, just wanted to leave a note of it.
 
-### `DEIMOS_060427_IIn`
-
-* ~~error with tellurics?~~ jk i'm dum dum
-* apparent problem with creating Gaussian (using `k`) at the very last spectrum?
-
 ## 6/4
 
 ### `DEIMOS_060427_IIn`
 
 Okay now time to finish out `DEIMOS_060427_IIn`. Other peak is at `x = 3674`. I'm going to try and start again from the beginning though. I'm sticking all of the data in a Google Sheet for now.
 
-Still getting a problem using `k` at the very end for the spectrum.
+Getting a problem using `k` at the very end for the spectrum - `ERROR (502, "floating point overflow")`
 
 Not sure what to make of the results - doesn't seem to change much???
 
@@ -200,6 +195,7 @@ Not very interesting again.
 ![](/images/SN_2013W.png)
 
 ### TLDR
+All seem to have issues creating Gaussians. Some sort of overflow error - `ERROR (502, "floating point overflow")`.
 
 * [`DEIMOS_050211_IIn`](#deimos_050211_iin) - bad - No standard star
 * [`DEIMOS_051005_IIn`](#deimos_051005_iin) - bad - No standard star or SN
@@ -214,3 +210,8 @@ Not very interesting again.
 * [`DEIMOS_121015_IIn`](#deimos_121015_iin) - bad - Nothing in `redux`
 * [`DEIMOS_121115_IIn`](#deimos_121115_iin) - bad - SN files aperture problems
 * [`DEIMOS_130217_IIn`](#deimos_130217_iin) - Works
+
+
+***
+
+Okay so I should be looking at the SN at different apertures and trying to find the shift in peaks *there*. The aperture is vertical placement and line is horizontal placement, so I want to line up with the HAlpha line. Also delete the background and dont make a new background!
