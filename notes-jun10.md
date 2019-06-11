@@ -9,6 +9,8 @@
 
 ## Starting off with SN2007K
 
+*(070122)*
+
 So obviously this one isn't perfect (since the line is still kind of broad) but I'm going to try it anyways since I already have it.
 
 Line of sight velocity is calculated by:
@@ -29,6 +31,8 @@ I'm not totally convinced that the maximum one is a good measurement but I don't
 
 ### SN_2013W
 
+*(130217)*
+
 This one isn't quite as long, but still gives a result:
 
 ![](/SN_Images/SN_2013W/SN_2013W.png)
@@ -36,3 +40,7 @@ This one isn't quite as long, but still gives a result:
 ![](/SN_Images/SN_2013W/SN_2013W_interp.png)
 
 ## 6/11
+
+I think I've ruled out `060427` (galaxy too short), `061223` (???), and `101107` (SN2009 is jumbled, SN2010B is jumbled). Additionally, `051005` has no SN and both `070216` and `121015` have nothing in their `redux` folder. Have not ruled anything else out yet.
+
+**Question** - Can I still do the SN analysis without worrying about calibrating to the standard star? I would imagine yes but I'm not sure.
