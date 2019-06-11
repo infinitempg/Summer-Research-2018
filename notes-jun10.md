@@ -11,6 +11,10 @@
 
 So obviously this one isn't perfect (since the line is still kind of broad) but I'm going to try it anyways since I already have it.
 
+Line of sight velocity is calculated by:
+
+$$v = \frac{\Delta\lambda}{\lambda_0} c$$
+
 Here is the image:
 
 ![](/SN_Images/SN2007K/SN2007K.png)
@@ -18,6 +22,8 @@ Here is the image:
 ![](/SN_Images/SN2007K/SN2007K_interp.png)
 
 I can make this a **lot** more efficient but that would be wasting time at this point - later I will make a function to plot both right away without having to double change everything.
+
+I'm not totally convinced that the maximum one is a good measurement but I don't know.
 
 ## Looking for other SNs to use?
 
@@ -28,3 +34,5 @@ This one isn't quite as long, but still gives a result:
 ![](/SN_Images/SN_2013W/SN_2013W.png)
 
 ![](/SN_Images/SN_2013W/SN_2013W_interp.png)
+
+## 6/11
