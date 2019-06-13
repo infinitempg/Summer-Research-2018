@@ -44,3 +44,60 @@ This one isn't quite as long, but still gives a result:
 I think I've ruled out `060427` (galaxy too short), `061223` (???), and `101107` (SN2009 is jumbled, SN2010B is jumbled). Additionally, `051005` has no SN and both `070216` and `121015` have nothing in their `redux` folder. Have not ruled anything else out yet.
 
 **Question** - Can I still do the SN analysis without worrying about calibrating to the standard star? I would imagine yes but I'm not sure.
+
+**Answer** - just wait on it for now.
+
+SN to try: ~~`110929`~~ (jumbled), `120923` (R), `121115` (R), `050211` (no standard), maybe `060427`.
+
+### `120923`
+
+#### SN_2008en
+
+![](/SN_Images/SN_2008en/SN_2008en_01.png)
+
+![](/SN_Images/SN_2008en/SN_2008en_01_interp.png)
+
+![](/SN_Images/SN_2008en/SN_2008en_02.png)
+
+![](/SN_Images/SN_2008en/SN_2008en_02_interp.png)
+
+
+#### SN_2008gm
+
+No clear continuum??
+
+#### SN_2009ip
+
+No clear H Alpha
+
+### `121115`
+
+#### SN_2005ip
+
+No clear continuum??
+
+#### SN_2005cp
+
+![](/SN_Images/SN_2005ip/SN_2005ip_01.png)
+
+![](/SN_Images/SN_2005ip/SN_2005ip_01_interp.png)
+
+![](/SN_Images/SN_2005ip/SN_2005ip_02.png)
+
+![](/SN_Images/SN_2005ip/SN_2005ip_02_interp.png)
+
+`SN_2005ip_02` obviously looks a little weird, I might want to re-look at that later.
+
+## 6/13
+
+### `050211`
+
+*Note:* These have not been calibrated with tellurics
+
+Well I tried but it won't let me do them. :(
+
+### `060427`
+
+![](/SN_Images/SN2006bo/SN2006bo.png)
+
+![](/SN_Images/SN2006bo/SN2006bo_interp.png)
