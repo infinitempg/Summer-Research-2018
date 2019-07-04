@@ -2,15 +2,25 @@
 
 Tasks:
 
-* Plot spectra for all points
-* Analyze the NII line if possible
-  * 2005_ip
-  * 2007K
+* ~~Plot spectra for all points~~
+* ~~Analyze the NII line if possible~~
+  * ~~2005_ip~~
+  * ~~2007K~~
 * ~~`101107_IIn`:~~
   * ~~`SN_2010jl`: Set linear scale, high of 250.~~
 * Plot all offsets?
-* Redo SN_2005ip_01_R 480
-* Redo SN_2008en_02_R 345
+* Redo `SN_2005ip_01_R 480`
+* Redo `SN_2008en_02_R 345`
+
+## Plotting for all points
+
+This didn't really prove very fruitful but I think that comes down to me not really knowing the best way to visualize it. I tried plotting them all on to one plot but that wasn't super helpful:
+
+![](/SN_Images/SN2007K/SN2007K_galspec.png)
+
+Individual plots are in the `/SN_Images/SN2007K/Gal_spec` folder.
+
+There were some that I still have to redo (`SN_2005ip_01_R 480` and `SN_2008en_02_R 345` due to accidentally forgetting to delete the other aperture).
 
 ## `SN_2010jl`
 
