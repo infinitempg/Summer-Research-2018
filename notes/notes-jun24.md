@@ -46,4 +46,4 @@ These two look fairly similar, if anything the different range may have stretche
 ![](/SN_Images/SN_2005ip_NII/SN_2005ip_02.png)
 ![](/SN_Images/SN_2005ip_NII/SN_2005ip_02_poly.png)
 
-The comparisons for `SN_2005ip` aren't exactly fair since I did them for different aperture ranges - but it does show that the trend *could* be different.
+The comparisons for `SN_2005ip` aren't exactly fair since I did them for different aperture ranges - but it does show that the trend *could* be different. I think this will need further work.
