@@ -4,8 +4,12 @@
 
 Tasks:
 
-* List of all objects (with comments) on what's missing/needs more data reduction
-* Plots of H-alpha profile of SN, marking where maximum is and where the interpolation says it should be
+* ~~List of all objects (with comments) on what's missing/needs more data reduction~~
+* ~~Plots of H-alpha profile of SN, marking where maximum is and where the interpolation says it should be~~
+* ~~Use polynomial fit instead of spline~~
+* Plot spectra for all points
+* Analyze the NII line if possible
+
 
 ### H-alpha profiles
 
@@ -17,7 +21,9 @@ Example:
 
 Not really sure this is the best way to visualize the data, but it at least shows the offset.
 
-### Catalog
+### Catalog (updated 6/21)
+
+Pictures updated with polynomial fit instead of spline fit
 
 Okay list time:
 
@@ -47,25 +53,25 @@ Okay list time:
 * `060427_IIn`:
   * `SN2006bo`:
   ![](/SN_Images/SN2006bo/SN2006bo.png)
-  ![](/SN_Images/SN2006bo/SN2006bo_interp.png)
+  ![](/SN_Images/SN2006bo/SN2006bo_poly.png)
   ![](/SN_Images/SN2006bo/SN2006bo_spec.png)
 * `070122_IIn`:
   * `SN2007K`:
   ![](/SN_Images/SN2007K/SN2007K.png)
-  ![](/SN_Images/SN2007K/SN2007K_interp.png)
+  ![](/SN_Images/SN2007K/SN2007K_poly.png)
   ![](/SN_Images/SN2007K/SN2007K_spec.png)
 * `120923_IIn`:
   * `SN_2008en`:
   ![](/SN_Images/SN_2008en/SN_2008en_01.png)
-  ![](/SN_Images/SN_2008en/SN_2008en_01_interp.png)
+  ![](/SN_Images/SN_2008en/SN_2008en_01_poly.png)
   ![](/SN_Images/SN_2008en/SN_2008en_01_spec.png)
 * `121115_IIn`:
   * `SN_2005ip`:
   ![](/SN_Images/SN_2005ip/SN_2005ip_01.png)
-  ![](/SN_Images/SN_2005ip/SN_2005ip_01_interp.png)
+  ![](/SN_Images/SN_2005ip/SN_2005ip_01_poly.png)
   ![](/SN_Images/SN_2005ip/SN_2005ip_01_spec.png)
 * `130217_IIn`:
   * `SN_2013W`:
   ![](/SN_Images/SN_2013W/SN_2013W.png)
-  ![](/SN_Images/SN_2013W/SN_2013W_interp.png)
+  ![](/SN_Images/SN_2013W/SN_2013W_poly.png)
   ![](/SN_Images/SN_2013W/SN_2013W_spec.png)
