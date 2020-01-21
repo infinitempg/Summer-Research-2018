@@ -1,75 +1,68 @@
-./rawdata/DE.20060427.54819.fits,bd174708
-./rawdata/DE.20060427.17485.fits,IntFlat LngVrMir
-./rawdata/DE.20060427.84111.fits,Focus loop R dome
-./rawdata/DE.20060427.16216.fits,NeArKrXeHg arc b06ap2
-./rawdata/DE.20060427.17411.fits,IntFlat LngVrMir
-./rawdata/DE.20060427.15181.fits,NeArKrXeHg arc HDa06DB
-./rawdata/DE.20060427.17850.fits,IntFlat Ha06Ab
-./rawdata/DE.20060427.14421.fits,IntFlat LngVrMir
-./rawdata/DE.20060427.81333.fits,Direct image mask 4594C1
-./rawdata/DE.20060427.09911.fits,D1 dome flat
-./rawdata/DE.20060427.17260.fits,NeArKrXeHg arc LngVrMir
-./rawdata/DE.20060427.55394.fits,bd174708 900ZD grating
-./rawdata/DE.20060427.06431.fits,Focus loop R dome
-./rawdata/DE.20060427.16722.fits,NeArKrXeHg arc Ha06Bb
-./rawdata/DE.20060427.83925.fits,Focus loop R dome
-./rawdata/DE.20060427.84022.fits,Focus loop R dome
-./rawdata/DE.20060427.17922.fits,IntFlat Ha06Ab
-./rawdata/DE.20060427.08546.fits,D1 arcs
-./rawdata/DE.20060427.08403.fits,A1 arcs
-./rawdata/DE.20060427.16364.fits,IntFlat b06ap2
-./rawdata/DE.20060427.83876.fits,Focus loop R dome
-./rawdata/DE.20060427.08618.fits,D1 arcs
-./rawdata/DE.20060427.15840.fits,b06ap4 Flat
-./rawdata/DE.20060427.54452.fits,bd174708
-./rawdata/DE.20060427.15332.fits,IntFlat HDa06DB
-./rawdata/DE.20060427.08691.fits,D1 arcs
-./rawdata/DF.20060427.07952.fits,Alignment check Mirror/R
-./rawdata/DE.20060427.54038.fits,sn2006bo
-./rawdata/DE.20060427.10192.fits,A1 dome flat
-./rawdata/DE.20060427.09999.fits,NeArKrXeCdZnHg arc LngVrMir
-./rawdata/DE.20060427.05282.fits,Direct image mask 4594D1
-./rawdata/DE.20060427.06292.fits,Focus loop R dome
-./rawdata/DE.20060427.05001.fits,test bias
-./rawdata/DE.20060427.08330.fits,A1 arcs
-./rawdata/DE.20060427.17339.fits,IntFlat LngVrMir
-./rawdata/DE.20060427.15692.fits,NeArKrXeHg arc b06ap4
-./rawdata/DE.20060427.55537.fits,bd174708 900ZD grating
-./rawdata/DE.20060427.17772.fits,NeArKrXeHg arc Ha06Ab
-./rawdata/DF.20060427.11868.fits,Alignment check Mirror/R
-./rawdata/DE.20060427.14349.fits,IntFlat LngVrMir
-./rawdata/DE.20060427.06335.fits,Focus loop R dome
-./rawdata/DE.20060427.84065.fits,Focus loop R dome
-./rawdata/DE.20060427.09057.fits,D1 dome flat
-./rawdata/DE.20060427.06475.fits,Focus loop R dome
-./rawdata/DE.20060427.15259.fits,IntFlat HDa06DB
-./rawdata/DE.20060427.08257.fits,A1 arcs
-./rawdata/DE.20060427.14274.fits,IntFlat LngVrMir
-./rawdata/DE.20060427.11324.fits,longslit arc
-./rawdata/DE.20060427.10411.fits,A1 dome flat
-./rawdata/DE.20060427.09688.fits,D1 dome flat
-./rawdata/DE.20060427.08830.fits,D1 dome flat
-./rawdata/DE.20060427.09470.fits,D1 dome flat
-./rawdata/DE.20060427.06382.fits,Focus loop R dome
-./rawdata/DE.20060427.16946.fits,IntFlat Ha06Bb
-./rawdata/DE.20060427.16291.fits,IntFlat b06ap2
-./rawdata/DE.20060427.16439.fits,IntFlat b06ap2
-./rawdata/DE.20060427.06194.fits,Focus loop R dome
-./rawdata/DF.20060427.10703.fits,Alignment check Mirror/R
-./rawdata/DE.20060427.14799.fits,NeArKrXe arc LngVrMir
-./rawdata/DF.20060427.11676.fits,Alignment check Mirror/R
-./rawdata/DE.20060427.11251.fits,longslit arc
-./rawdata/DE.20060427.54677.fits,bd174708
-./rawdata/DE.20060427.15910.fits,b06ap4 Flat
-./rawdata/DE.20060427.12386.fits,Direct image mask HDa06DB
-./rawdata/DE.20060427.15402.fits,IntFlat HDa06DB
-./rawdata/DE.20060427.55154.fits,bd174708
-./rawdata/DE.20060427.14198.fits,NeArKrXeCdZnHg arc LngVrMir
-./rawdata/DE.20060427.09250.fits,D1 dome flat
-./rawdata/DE.20060427.16799.fits,IntFlat Ha06Bb
-./rawdata/DE.20060427.80864.fits,bias
-./rawdata/DE.20060427.83970.fits,Focus loop R dome
-./rawdata/DE.20060427.15767.fits,b06ap4 Flat
-./rawdata/DE.20060427.16872.fits,IntFlat Ha06Bb
-./rawdata/DE.20060427.55071.fits,bd174708
-./rawdata/DE.20060427.17994.fits,IntFlat Ha06Ab
+./rawdata/DE.20121115.05379.,Focus loop R dome
+./rawdata/DE.20121115.10985.,IntFlat LVMslits
+./rawdata/DE.20121115.11697.,DomeFlat
+./rawdata/DE.20121115.08875.,IntFlat LVMslits
+./rawdata/DE.20121115.17954.,SN2009ip
+./rawdata/DE.20121115.24737.,BD+174708
+./rawdata/DE.20121115.11615.,DomeFlat
+./rawdata/DE.20121115.10835.,IntFlat LVMslits
+./rawdata/DE.20121115.11818.,DomeFlat
+./rawdata/DE.20121115.11859.,DomeFlat
+./rawdata/DE.20121115.26593.,SN2005cp
+./rawdata/DE.20121115.49925.,SN 2006jd
+./rawdata/DE.20121115.08479.,IntFlat LVMslits
+./rawdata/DE.20121115.11658.,DomeFlat
+./rawdata/DE.20121115.05318.,Focus loop R dome
+./rawdata/DE.20121115.48227.,HD84937
+./rawdata/DE.20121115.08252.,IntFlat LVMslits
+./rawdata/DE.20121115.08403.,IntFlat LVMslits
+./rawdata/DE.20121115.10402.,IntFlat LVMslits
+./rawdata/DE.20121115.08177.,IntFlat LVMslits
+./rawdata/DE.20121115.09770.,IntFlat LVMslits
+./rawdata/DE.20121115.10910.,IntFlat LVMslits
+./rawdata/DE.20121115.09604.,IntFlat LVMslits
+./rawdata/DE.20121115.11737.,DomeFlat
+./rawdata/DE.20121115.15631.,BD+174708
+./rawdata/DF.20121115.07440.,
+./rawdata/DE.20121115.09239.,IntFlat LVMslits
+./rawdata/DE.20121115.09464.,IntFlat LVMslits
+./rawdata/DE.20121115.14978.,BD+284211
+./rawdata/DE.20121115.11941.,DomeFlat
+./rawdata/DE.20121115.10686.,IntFlat LVMslits
+./rawdata/DE.20121115.05256.,Focus loop R dome
+./rawdata/DE.20121115.08327.,IntFlat LVMslits
+./rawdata/DE.20121115.05684.,Focus loop R dome
+./rawdata/DE.20121115.11901.,DomeFlat
+./rawdata/DE.20121115.10326.,IntFlat LVMslits
+./rawdata/DE.20121115.10760.,IntFlat LVMslits
+./rawdata/DE.20121115.08794.,IntFlat LVMslits
+./rawdata/DE.20121115.15325.,BD+284211
+./rawdata/DE.20121115.08956.,IntFlat LVMslits
+./rawdata/DE.20121115.56993.,SN 2010jl
+./rawdata/DE.20121115.10536.,IntFlat LVMslits
+./rawdata/DE.20121115.11777.,DomeFlat
+./rawdata/DE.20121115.11575.,DomeFlat
+./rawdata/DE.20121115.11060.,IntFlat LVMslits
+./rawdata/DE.20121115.52681.,SN 2005ip
+./rawdata/DE.20121115.07874.,NeArKrXeCdZnHg arc LVMslits
+./rawdata/DE.20121115.08555.,IntFlat LVMslits
+./rawdata/DE.20121115.11492.,DomeFlat
+./rawdata/DE.20121115.51408.,SN 2005ip
+./rawdata/DE.20121115.08631.,IntFlat LVMslits
+./rawdata/DE.20121115.09098.,IntFlat LVMslits
+./rawdata/DE.20121115.05500.,Focus loop R dome
+./rawdata/DE.20121115.15151.,BD+284211
+./rawdata/DE.20121115.10611.,IntFlat LVMslits
+./rawdata/DE.20121115.48645.,SN 2006jd
+./rawdata/DE.20121115.07951.,IntFlat LVMslits
+./rawdata/DE.20121115.09685.,IntFlat LVMslits
+./rawdata/DE.20121115.05560.,Focus loop R dome
+./rawdata/DE.20121115.10250.,NeArKrXeCdZnHg arc LVMslits
+./rawdata/DE.20121115.05622.,Focus loop R dome
+./rawdata/DE.20121115.08102.,IntFlat LVMslits
+./rawdata/DE.20121115.15771.,BD+174708
+./rawdata/DF.20121115.06782.,
+./rawdata/DE.20121115.09380.,IntFlat LVMslits
+./rawdata/DE.20121115.47575.,HD19445
+./rawdata/DE.20121115.08026.,IntFlat LVMslits
+./rawdata/DE.20121115.25308.,SN2005cp
