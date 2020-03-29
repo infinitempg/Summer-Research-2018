@@ -1,0 +1,112 @@
+file,header,GRATENAM
+./rawdata/DE.20121115.24062.fits,PTF10nvg,1200G
+./rawdata/DE.20121115.05379.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.16294.fits,PSNJ1822,600ZD
+./rawdata/DE.20121115.10985.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.11697.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.45009.fits,PTF12jvy,600ZD
+./rawdata/DE.20121115.57872.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.28885.fits,PTF12kbx,Mirror
+./rawdata/DE.20121115.08875.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.17954.fits,SN2009ip,600ZD
+./rawdata/DE.20121115.24737.fits,BD+174708,1200G
+./rawdata/DE.20121115.11615.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.10835.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.11818.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.57669.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.11859.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.57628.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.26593.fits,SN2005cp,1200G
+./rawdata/DE.20121115.49925.fits,SN 2006jd,1200G
+./rawdata/DE.20121115.08479.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.11658.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.36602.fits,PTF10ufj Host,600ZD
+./rawdata/DE.20121115.05318.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.29108.fits,PTF12kbx,Mirror
+./rawdata/DE.20121115.48227.fits,HD84937,1200G
+./rawdata/DE.20121115.08252.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.34014.fits,PTF12lfv,600ZD
+./rawdata/DE.20121115.42057.fits,SN 1961V,600ZD
+./rawdata/DE.20121115.17349.fits,PTF12gzk,600ZD
+./rawdata/DE.20121115.08403.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.10402.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.57536.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.08177.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.09770.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.10910.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.37874.fits,PTF10ufj Host,600ZD
+./rawdata/DE.20121115.45966.fits,PTF12jxq,600ZD
+./rawdata/DE.20121115.09604.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.55078.fits,SN 2012bz Host,600ZD
+./rawdata/DE.20121115.11737.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.57911.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.15631.fits,BD+174708,600ZD
+./rawdata/DE.20121115.09239.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.57439.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.09464.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.14978.fits,BD+284211,600ZD
+./rawdata/DE.20121115.57788.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.11941.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.10686.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.31499.fits,PTF12lcr,600ZD
+./rawdata/DE.20121115.05256.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.39155.fits,PTF10ufj Host,600ZD
+./rawdata/DE.20121115.08327.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.05684.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.11901.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.10326.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.10760.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.08794.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.15325.fits,BD+284211,600ZD
+./rawdata/DE.20121115.28375.fits,PTF12kbx,Mirror
+./rawdata/DE.20121115.08956.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.56993.fits,SN 2010jl,600ZD
+./rawdata/DE.20121115.10536.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.11777.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.40778.fits,SN 1961V,600ZD
+./rawdata/DE.20121115.43340.fits,SN 1961V,600ZD
+./rawdata/DE.20121115.36240.fits,HD19445,600ZD
+./rawdata/DE.20121115.11575.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.11060.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.52681.fits,SN 2005ip,1200G
+./rawdata/DE.20121115.07874.fits,NeArKrXeCdZnHg arc LVMslits,1200G
+./rawdata/DE.20121115.23306.fits,LSQ12ghf,600ZD
+./rawdata/DE.20121115.08555.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.32444.fits,PTF12ldy,600ZD
+./rawdata/DE.20121115.11492.fits,DomeFlat,Mirror
+./rawdata/DE.20121115.51408.fits,SN 2005ip,1200G
+./rawdata/DE.20121115.20398.fits,SN Nerva Host,600ZD
+./rawdata/DE.20121115.57749.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.08631.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.09098.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.05500.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.15151.fits,BD+284211,600ZD
+./rawdata/DE.20121115.10611.fits,IntFlat LVMslits,600ZD
+./rawdata/DE.20121115.48645.fits,SN 2006jd,1200G
+./rawdata/DE.20121115.46732.fits,LSQ12gkk,600ZD
+./rawdata/DE.20121115.57709.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.34677.fits,PTF12lfv,600ZD
+./rawdata/DE.20121115.07951.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.09685.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.05560.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.33320.fits,PTF12lcs,600ZD
+./rawdata/DE.20121115.21673.fits,SN Nerva Host,600ZD
+./rawdata/DE.20121115.35667.fits,PTF12jtw,600ZD
+./rawdata/DE.20121115.10250.fits,NeArKrXeCdZnHg arc LVMslits,600ZD
+./rawdata/DE.20121115.57493.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.29330.fits,PTF12kbx,Mirror
+./rawdata/DE.20121115.57578.fits,Twilight Flat,Mirror
+./rawdata/DE.20121115.24168.fits,PTF10nvg,1200G
+./rawdata/DE.20121115.56240.fits,SN 2012ab,600ZD
+./rawdata/DE.20121115.05622.fits,Focus loop R dome,Mirror
+./rawdata/DE.20121115.08102.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.15771.fits,BD+174708,600ZD
+./rawdata/DE.20121115.09380.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.30608.fits,PTF12jgd,600ZD
+./rawdata/DE.20121115.36334.fits,HD19445,600ZD
+./rawdata/DE.20121115.30063.fits,PTF12jgd,600ZD
+./rawdata/DE.20121115.47575.fits,HD19445,600ZD
+./rawdata/DE.20121115.08026.fits,IntFlat LVMslits,1200G
+./rawdata/DE.20121115.25308.fits,SN2005cp,1200G
+./rawdata/DE.20121115.28594.fits,PTF12kbx,Mirror
+./rawdata/DE.20121115.57830.fits,Twilight Flat,Mirror

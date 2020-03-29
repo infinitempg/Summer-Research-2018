@@ -10,13 +10,13 @@ If you're downloading new data from the [Keck Archive](https://koa.ipac.caltech.
 
 1. Delete all items in the redux folder, and then add `deimos_badmask_3.fits`, `deimos_linelist.dat`, and `skylines.txt`.
     - If you don't clear out the `redux` folder, PyRAF will complain about not specifying FITS extensions or the file already existing
-
+2. Make sure `login.cl` is in the directory!
 
 ### Headers
 
 1. Run `read_headers.py` to get all the headers for all the `*.fits` files in `rawdata`.
 2. Imported them to Google Sheets to get a better look. Here are the key things I took away (after looking at a few of these) for importing to `uvir_lowres.py`:
-    - the `science` images are fairly obvious - the standard stars and SN will have those names listed in the headers
+    - the `science` images are fairly obvious - the standard stars and SN will have those names listed in the headers (make sure standard is first???)
     - the `flats` should be listed as `LVM` or `LongViewMirror`.
     - the `arc` is generally also listed as `arc`, though some have multiple so it's kind of a guessing game
 
@@ -245,3 +245,7 @@ Maybe I'm using the wrong arc? The original appears to use `DE.20121115.07874.fi
 Okay now the value for `CRVAL1 = 4760.65072001206`, which is definitely closer. The `NAXIS1` is 4109 now though??? They look lined up but again there's no physical coordinates listed (though again those physical coordinates don't match up to what the wavelengths are).
 
 I think I need to look at a different one again just to see if the coordinates match up there as well.
+
+***
+
+OH MY GOD IT WAS JUST DELETE HEAD BEING DUMB AHHHHHHHHHHHHHHHHHHHHH
