@@ -1,0 +1,3056 @@
+
+imred/:
+ argus/         ctioslit/       hydra/          kpnocoude/      vtel/
+ bias/          dtoi/           iids/           kpnoslit/
+ ccdred/        echelle/        irred/          quadred/
+ crutil/        generic/        irs/            specred/
+ccdred/:
+ badpiximage    ccdlist         combine         mkillumcor      setinstrument
+ ccdgroups      ccdmask         darkcombine     mkillumflat     zerocombine
+ ccdhedit       ccdproc         flatcombine     mkskycor
+ ccdinstrument  ccdtest/        mkfringecor     mkskyflat
+specred/:
+ aidpars@       apscatter       dopcor          sapertures      slist
+ apall          apsum           doslit          sarith          specplot
+ apdefault@     aptrace         fitprofs        scombine        specshift
+ apedit         autoidentify    identify        scopy           splot
+ apfind         background      illumination    sensfunc        standard
+ apfit          bplot           lscombine       setairmass      telluric
+ apflatten      calibrate       msresp1d        setjd           transform
+ apmask         continuum       odcombine       sfit
+ apnormalize    deredden        refspectra      sflip
+ aprecenter     dispcor         reidentify      skysub
+ apresize       dofibers        response        skytweak
+
+
+date:		20130610
+standard:	BD262606
+SNimage:	SN2011fh
+
+pipeline:	True
+arcRun:		True
+sciRun:		True
+extractStd:	False
+extractSci:	False
+
+Hit ENTER to run.['DE.20130610.09817.fits', 'DE.20130610.10028.fits', 'DE.20130610.10232.fits', 'DE.20130610.10311.fits', 'DE.20130610.10392.fits', 'DE.20130610.10472.fits'] DE.20130610.07526.fits
+copying DE.20130610.07526.fits
+copying DE.20130610.09817.fits
+copying DE.20130610.10028.fits
+copying DE.20130610.10232.fits
+copying DE.20130610.10311.fits
+copying DE.20130610.10392.fits
+copying DE.20130610.10472.fits
+copying DE.20130610.20148.fits
+copying DE.20130610.20886.fits
+copying DE.20130610.21558.fits
+DE.20130610.20148.fits
+/Users/mike/anaconda3/envs/iraf27/lib/python2.7/site-packages/pyraf/irafimport.py:116: RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility. Expected 96, got 88
+  retval = _originalImport(name, globals, locals, fromlist, level)
+DE.20130610.20886.fits
+DE.20130610.21558.fits
+starting
+['DE.20130610.20148.fits', 'DE.20130610.20886.fits', 'DE.20130610.21558.fits'] ['DE.20130610.09817.fits', 'DE.20130610.10028.fits', 'DE.20130610.10232.fits', 'DE.20130610.10311.fits', 'DE.20130610.10392.fits', 'DE.20130610.10472.fits'] DE.20130610.07526.fits
+DE.20130610.09817.fits[3] -> d09817_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d09817_B.fits[295:1390,*] -> td09817_B.fits
+DE.20130610.09817.fits[7] -> d09817_R.fits
+d09817_R.fits[686:1775,*]
+d09817_R.fits[686:1775,*] -> td09817_R.fits
+
+Transforming image rtd09817_R.fits to image rtd09817_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+DE.20130610.10028.fits[3] -> d10028_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d10028_B.fits[295:1390,*] -> td10028_B.fits
+DE.20130610.10028.fits[7] -> d10028_R.fits
+d10028_R.fits[686:1775,*]
+d10028_R.fits[686:1775,*] -> td10028_R.fits
+
+Transforming image rtd10028_R.fits to image rtd10028_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+DE.20130610.10232.fits[3] -> d10232_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d10232_B.fits[295:1390,*] -> td10232_B.fits
+DE.20130610.10232.fits[7] -> d10232_R.fits
+d10232_R.fits[686:1775,*]
+d10232_R.fits[686:1775,*] -> td10232_R.fits
+
+Transforming image rtd10232_R.fits to image rtd10232_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+DE.20130610.10311.fits[3] -> d10311_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d10311_B.fits[295:1390,*] -> td10311_B.fits
+DE.20130610.10311.fits[7] -> d10311_R.fits
+d10311_R.fits[686:1775,*]
+d10311_R.fits[686:1775,*] -> td10311_R.fits
+
+Transforming image rtd10311_R.fits to image rtd10311_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+DE.20130610.10392.fits[3] -> d10392_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d10392_B.fits[295:1390,*] -> td10392_B.fits
+DE.20130610.10392.fits[7] -> d10392_R.fits
+d10392_R.fits[686:1775,*]
+d10392_R.fits[686:1775,*] -> td10392_R.fits
+
+Transforming image rtd10392_R.fits to image rtd10392_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+DE.20130610.10472.fits[3] -> d10472_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d10472_B.fits[295:1390,*] -> td10472_B.fits
+DE.20130610.10472.fits[7] -> d10472_R.fits
+d10472_R.fits[686:1775,*]
+d10472_R.fits[686:1775,*] -> td10472_R.fits
+
+Transforming image rtd10472_R.fits to image rtd10472_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+['DE.20130610.09817.fits', 'DE.20130610.10028.fits', 'DE.20130610.10232.fits', 'DE.20130610.10311.fits', 'DE.20130610.10392.fits', 'DE.20130610.10472.fits'] flats
+rtd09817_B.fits,rtd10028_B.fits,rtd10232_B.fits,rtd10311_B.fits,rtd10392_B.fits,rtd10472_B.fits
+DE.20130610.07526.fits[3] -> d07526_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d07526_B.fits[295:1390,*] -> td07526_B.fits
+DE.20130610.07526.fits[7] -> d07526_R.fits
+d07526_R.fits[686:1775,*]
+d07526_R.fits[686:1775,*] -> td07526_R.fits
+
+Transforming image rtd07526_R.fits to image rtd07526_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+efits Flat-B.fits "VTKLaplace(i1,numret=1)" Sharp-B.fits
+efits Flat-B.fits "VTKLaplace(i1,numret=1)" Sharp-B.fits
+finished
+efits Flat-R.fits "VTKLaplace(i1,numret=1)" Sharp-R.fits
+efits Flat-R.fits "VTKLaplace(i1,numret=1)" Sharp-R.fits
+finished
+getrect -ydist Sharp-B.fits -nx 6 -dy 11 -x 1 -y 1 -peakwin 3 -dump
+getrect -ydist Sharp-B.fits -nx 6 -dy 11 -x 1 -y 1 -peakwin 3 -dump
+finished
+Doing y-distortion
+creating ydist0.fits 2 [11, 373]
+BWT residual= 25.0595034372
+RMS residual= 2.75466884654
+creating yfit0.fits 2 [11, 373]
+creating yweight0.fits 2 [11, 373]
+Updating header.
+Updating mapping file.
+Getting mapping.
+J= 409 9.9853515625 2.15593826217
+J= 818 19.970703125 1.92131287603
+J= 1227 29.9560546875 1.64204074157
+J= 1636 39.94140625 1.42315360911
+J= 2045 49.9267578125 1.17899185684
+J= 2454 59.912109375 0.935935286069
+J= 2863 69.8974609375 0.697250069249
+J= 3272 79.8828125 0.46316733745
+J= 3681 89.8681640625 0.233561453111
+J= 4090 99.853515625 0.00337471542265
+Updating mapping file.
+getrect -ydist Sharp-R.fits -nx 12 -dy 11 -x 1 -y 1 -peakwin 3 -dump
+getrect -ydist Sharp-R.fits -nx 12 -dy 11 -x 1 -y 1 -peakwin 3 -dump
+finished
+Doing y-distortion
+creating ydist0.fits 2 [23, 373]
+BWT residual= 11.3671559231
+RMS residual= 3.89366639489
+creating yfit0.fits 2 [23, 373]
+creating yweight0.fits 2 [23, 373]
+Updating header.
+Updating mapping file.
+Getting mapping.
+J= 409 9.9853515625 2.16887468697
+J= 818 19.970703125 1.91229559273
+J= 1227 29.9560546875 1.65543354209
+J= 1636 39.94140625 1.40310652099
+J= 2045 49.9267578125 1.16650750107
+J= 2454 59.912109375 0.931698364656
+J= 2863 69.8974609375 0.697806897715
+J= 3272 79.8828125 0.467771586113
+J= 3681 89.8681640625 0.237238847571
+J= 4090 99.853515625 0.00345183503074
+Updating mapping file.
+copyrect -ydist Sharp-B.fits Flat-B.fits
+copyrect -ydist Sharp-B.fits Flat-B.fits
+finished
+Copying solution to Flat-B.fits
+copyrect -ydist Sharp-R.fits Flat-R.fits
+copyrect -ydist Sharp-R.fits Flat-R.fits
+finished
+Copying solution to Flat-R.fits
+findslits -ydist Flat-B.fits -th 0.2 -fwhm 2
+findslits -ydist Flat-B.fits -th 0.2 -fwhm 2
+finished
+Reading input Flat-B.fits
+Dumping spatial.fits [1096]
+Dumping p.fits [1096]
+Searching for lines with 2.0 0.2
+
+[   59.07160246   231.07171201   270.1063434    442.66205168   481.09706528
+   654.0274358    692.15437232   865.46258347   903.54750932  1076.91861377] [ 0.36710334  0.41672763  0.37057232  0.5430076   0.44232152  0.42228155
+  0.50431563  0.38863041  0.64960716  0.4076362 ] [ 2.75758006  2.62606808  2.95533963  2.6388589   2.8923268   3.28755223
+  2.85778874  2.79719653  2.8997537   2.9601011 ]
+Found 10 good features.
+   59.07 (  2.76),    231.07 (  2.63),    270.11 (  2.96),    442.66 (  2.64),    481.10 (  2.89),    654.03 (  3.29),    692.15 (  2.86),    865.46 (  2.80),    903.55 (  2.90),   1076.92 (  2.96), 
+Using FWHM= 2.95533963256 0.170252023913
+
+   59.07 (  2.76),    231.07 (  2.63),    270.11 (  2.96),    442.66 (  2.64),    481.10 (  2.89),    654.03 (  3.29),    692.15 (  2.86),    865.46 (  2.80),    903.55 (  2.90),   1076.92 (  2.96), 
+
+[0.11063099491050889, 1.0, 0.11672386987381811, 1.1362675599873775, 0.11608569226494286, 1.3951180077910739, 0.11902540716576676, 1.6623907853361843, 0.11748718483018937, 2.0622554344176485, 0.11241550355019501]
+[0.9478009513401517, 8.567227946443422, 1.0, 1.1362675599873775, 0.9753017866451844, 1.2278076545691157, 1.0, 1.191577182756239, 0.9870765211209477, 1.2405358912047866, 0.9568320469392068]
+Generated ---  9
+
+findslits -ydist Flat-R.fits -th 0.2 -fwhm 2
+findslits -ydist Flat-R.fits -th 0.2 -fwhm 2
+finished
+Reading input Flat-R.fits
+Dumping spatial.fits [1090]
+Dumping p.fits [1090]
+Searching for lines with 2.0 0.2
+
+[  86.27773339  156.94000139  265.85549811  298.29143592  470.06597658
+  476.84216612  509.3901212   683.28505451  687.80730979  721.47925142
+  894.50921346  898.76664243  932.56861727] [ 0.805353    0.2468506   0.93317127  0.54889104  0.32381042  0.95878593
+  1.08624425  0.42663923  0.95993198  0.44662944  0.57104556  0.95322773
+  0.48027085] [ 2.42757645  6.53430697  2.26770266  2.42859928  2.73717995  2.26775402
+  2.52366683  8.0409809   2.39010371  2.98381765  7.15857723  2.60977454
+  2.77289482]
+Found 13 good features.
+   86.28 (  2.43),    156.94 (  6.53),    265.86 (  2.27),    298.29 (  2.43),    470.07 (  2.74),    476.84 (  2.27),    509.39 (  2.52),    683.29 (  8.04),    687.81 (  2.39),    721.48 (  2.98),    894.51 (  7.16),    898.77 (  2.61),    932.57 (  2.77), 
+Using FWHM= 2.98381765126 0.259896896531
+
+   86.28 (  2.43),    156.94 (  6.53),    265.86 (  2.27),    298.29 (  2.43),    470.07 (  2.74),    476.84 (  2.27),    509.39 (  2.52),    683.29 (  8.04),    687.81 (  2.39),    721.48 (  2.98),    894.51 (  7.16),    898.77 (  2.61),    932.57 (  2.77), 
+
+[0.777016674128426, 0.7789378203351749, 0.8882409591004594, 1.1117590408995406, 1.3354058532480961, 1.6680622819364244]
+[0.9975336334215712, 1.0, 1.0, 1.0, 1.2011648244997402, 1.2491051150324157]
+Generated ---  5
+
+Flat-B.fits
+WARNING: VerifyWarning: Invalid 'BLANK' keyword in header.  The 'BLANK' keyword is only applicable to integer data, and will be ignored in this HDU. [astropy.io.fits.hdu.image]
+Flat-R.fits
+makeflat -ydist Flat-B.fits
+makeflat -ydist Flat-B.fits
+finished
+Transforming.
+Working on slit 1 30 191
+Working on slit 2 245 400
+Working on slit 3 454 611
+Working on slit 4 672 819
+Working on slit 5 886 1037
+Writing 1D slt.fits
+Computing 2D slt.fits
+Computing 2D blz.fits
+Computing 2D flt.fits
+Done computing.
+makeflat -ydist Flat-R.fits
+makeflat -ydist Flat-R.fits
+finished
+Transforming.
+Working on slit 1 53 186
+Working on slit 2 241 394
+Working on slit 3 465 606
+Working on slit 4 681 818
+Working on slit 5 889 1030
+Writing 1D slt.fits
+Computing 2D slt.fits
+Computing 2D blz.fits
+Computing 2D flt.fits
+Done computing.
+copyrect -ydist Sharp-B.fits rtd07526_B.fits
+copyrect -ydist Sharp-B.fits rtd07526_B.fits
+finished
+Copying solution to rtd07526_B.fits
+copyrect -ydist Sharp-R.fits rtd07526_R.fits
+copyrect -ydist Sharp-R.fits rtd07526_R.fits
+finished
+Copying solution to rtd07526_R.fits
+copyslit Flat-B.fits rtd07526_B.fits -fft -ydist
+copyslit Flat-B.fits rtd07526_B.fits -fft -ydist
+finished
+Working on rtd07526_B.fits
+Found shift= -33
+. . . . .
+copyslit Flat-R.fits rtd07526_R.fits -fft -ydist
+copyslit Flat-R.fits rtd07526_R.fits -fft -ydist
+finished
+Working on rtd07526_R.fits
+Found shift= -41
+. . . . .
+flat2d Flat-Bflt.fits rtd07526_B.fits
+flat2d Flat-Bflt.fits rtd07526_B.fits
+finished
+rtd07526_B.fits --> rtd07526_Bf.fits
+flat2d Flat-Rflt.fits rtd07526_R.fits
+flat2d Flat-Rflt.fits rtd07526_R.fits
+finished
+rtd07526_R.fits --> rtd07526_Rf.fits
+flat2d Flat-Bblz.fits rtd07526_Bf.fits
+flat2d Flat-Bblz.fits rtd07526_Bf.fits
+finished
+rtd07526_Bf.fits --> rtd07526_Bff.fits
+flat2d Flat-Rblz.fits rtd07526_Rf.fits
+flat2d Flat-Rblz.fits rtd07526_Rf.fits
+finished
+rtd07526_Rf.fits --> rtd07526_Rff.fits
+efits Flat-Bblz.fits rtd07526_Bff.fits 'i2*greater(i1,0.1)' xdist_B.fits
+efits Flat-Bblz.fits rtd07526_Bff.fits 'i2*greater(i1,0.1)' xdist_B.fits
+finished
+efits Flat-Rblz.fits rtd07526_Rff.fits 'i2*greater(i1,0.1)' xdist_R.fits
+efits Flat-Rblz.fits rtd07526_Rff.fits 'i2*greater(i1,0.1)' xdist_R.fits
+finished
+getrect -xdist -ydist xdist_B.fits -nx 16 -dy 3 -b 3 -x 2 -y 2 -dump -normwt 1e6
+getrect -xdist -ydist xdist_B.fits -nx 16 -dy 3 -b 3 -x 2 -y 2 -dump -normwt 1e6
+finished
+Transforming.
+Doing slit 1 (161, 4096)
+masked.
+masked.
+creating xdist0.fits 2 [31, 54]
+BWT residual= 0.144896849366
+RMS residual= 0.211840188341
+creating xfit0.fits 2 [31, 54]
+creating xweight0.fits 2 [31, 54]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 2 (155, 4096)
+masked.
+masked.
+creating xdist1.fits 2 [31, 52]
+BWT residual= 0.021633420716
+RMS residual= 0.0829234788055
+creating xfit1.fits 2 [31, 52]
+creating xweight1.fits 2 [31, 52]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 3 (157, 4096)
+masked.
+masked.
+creating xdist2.fits 2 [31, 53]
+BWT residual= 0.0315194737832
+RMS residual= 0.134227951397
+creating xfit2.fits 2 [31, 53]
+creating xweight2.fits 2 [31, 53]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 4 (147, 4096)
+masked.
+creating xdist3.fits 2 [31, 49]
+BWT residual= 0.125594043009
+RMS residual= 0.280402276697
+creating xfit3.fits 2 [31, 49]
+creating xweight3.fits 2 [31, 49]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 5 (151, 4096)
+masked.
+masked.
+creating xdist4.fits 2 [31, 51]
+BWT residual= 0.183673041927
+RMS residual= 0.377998741944
+creating xfit4.fits 2 [31, 51]
+creating xweight4.fits 2 [31, 51]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+getrect -xdist -ydist xdist_R.fits -nx 16 -dy 3 -b 3 -x 2 -y 2 -dump -normwt 1e6
+getrect -xdist -ydist xdist_R.fits -nx 16 -dy 3 -b 3 -x 2 -y 2 -dump -normwt 1e6
+finished
+Transforming.
+Doing slit 1 (133, 4096)
+masked.
+masked.
+creating xdist0.fits 2 [31, 45]
+BWT residual= 0.0157225028824
+RMS residual= 0.0546598353287
+creating xfit0.fits 2 [31, 45]
+creating xweight0.fits 2 [31, 45]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 2 (153, 4096)
+masked.
+creating xdist1.fits 2 [31, 51]
+BWT residual= 0.0725973202962
+RMS residual= 0.280013627448
+creating xfit1.fits 2 [31, 51]
+creating xweight1.fits 2 [31, 51]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 3 (141, 4096)
+masked.
+creating xdist2.fits 2 [31, 47]
+BWT residual= 0.0394645586327
+RMS residual= 0.141508703851
+creating xfit2.fits 2 [31, 47]
+creating xweight2.fits 2 [31, 47]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 4 (137, 4096)
+masked.
+masked.
+creating xdist3.fits 2 [31, 46]
+BWT residual= 0.0163712067706
+RMS residual= 0.0202346006094
+creating xfit3.fits 2 [31, 46]
+creating xweight3.fits 2 [31, 46]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+Transforming.
+Doing slit 5 (141, 4096)
+masked.
+creating xdist4.fits 2 [31, 47]
+BWT residual= 0.0405737239437
+RMS residual= 0.105726929229
+creating xfit4.fits 2 [31, 47]
+creating xweight4.fits 2 [31, 47]
+Updating header.
+Updating mapping file.
+Getting mapping.
+Updating mapping file.
+copyrect -xdist xdist_B.fits rtd07526_Bf.fits
+copyrect -xdist xdist_B.fits rtd07526_Bf.fits
+finished
+Copying solution to rtd07526_Bf.fits
+copyrect -xdist xdist_R.fits rtd07526_Rf.fits
+copyrect -xdist xdist_R.fits rtd07526_Rf.fits
+finished
+Copying solution to rtd07526_Rf.fits
+waverect -xdist -ydist rtd07526_Bf.fits -o 3 -w1 6404.29 -w2 7715.01 -d0 0.32 -ll deimos_linelist.dat -arcamp -fwhm 4.2
+waverect -xdist -ydist rtd07526_Bf.fits -o 3 -w1 6404.29 -w2 7715.01 -d0 0.32 -ll deimos_linelist.dat -arcamp -fwhm 4.2
+finished
+Starting wavelength calibration for 1
+Transforming.
+Going into wavelength calibration
+Dumping temp_74557.fits [4096]
+Searching for lines with 4.2 10.0
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+Found 40 good lines
+   57.82 (  3.95),     80.50 (  0.00),    170.85 (  3.64),    382.85 (  3.71),    464.85 (  3.63),    670.14 (  3.78),    835.04 (  3.78),    916.08 (  3.95),   1036.08 (  3.91),   1624.39 (  3.97),   1692.05 (  3.89),   1802.86 (  3.68),   1983.30 (  3.74),   2008.97 (  6.02),   2067.16 (  3.90),   2091.17 (  3.66),   2116.12 (  3.67),   2277.25 (  3.67),   2361.56 (  3.61),   2444.21 (  3.64),   2598.44 (  3.74),   2663.11 (  4.35),   2748.41 (  3.63),   2792.45 (  3.76),   3053.06 (  3.70),   3089.47 (  3.69),   3258.16 (  3.71),   3361.19 (  3.74),   3411.76 (  3.66),   3457.85 (  3.72),   3490.99 (  3.69),   3541.62 (  0.00),   3555.93 (  3.68),   3581.36 (  3.68),   3714.81 (  3.72),   3758.35 (  5.05),   3861.58 (  3.84),   3882.85 (  3.97),   4015.99 (  3.77),   4044.66 (  3.69), 
+[ 3.63994213  0.15699207]
+Cut down to 35 lines
+Using FWHM= 3.78085041936 0.105287558887
+
+   57.82 (  3.95),    170.85 (  3.64),    382.85 (  3.71),    464.85 (  3.63),    670.14 (  3.78),    835.04 (  3.78),    916.08 (  3.95),   1036.08 (  3.91),   1624.39 (  3.97),   1692.05 (  3.89),   1802.86 (  3.68),   1983.30 (  3.74),   2067.16 (  3.90),   2091.17 (  3.66),   2116.12 (  3.67),   2277.25 (  3.67),   2361.56 (  3.61),   2444.21 (  3.64),   2598.44 (  3.74),   2748.41 (  3.63),   2792.45 (  3.76),   3053.06 (  3.70),   3089.47 (  3.69),   3258.16 (  3.71),   3361.19 (  3.74),   3411.76 (  3.66),   3457.85 (  3.72),   3490.99 (  3.69),   3555.93 (  3.68),   3581.36 (  3.68),   3714.81 (  3.72),   3861.58 (  3.84),   3882.85 (  3.97),   4015.99 (  3.77),   4044.66 (  3.69), 
+
+
+amp
+Read 75 lines
+Constructing templates with w0,w1,dispersions: 6404.29 7715.01
+[ 0.29440001  0.29696     0.29951999  0.30208001  0.30464     0.30720001
+  0.30976     0.31231999  0.31488001  0.31743997  0.31999999  0.32256001
+  0.32512     0.32768002  0.33024001  0.33279997  0.33535999  0.33791998
+  0.34048     0.34303999]
+FFTing
+Cross correlating
+[ 7309.30120554  7109.83623936  7655.095732    7649.91433057  7644.86343058
+  7070.70920053  7634.56456795  7629.633989    7073.81960061  7064.09415963
+  7054.21000012  7039.65127923  7034.94087985  7025.57127776  7015.72807851
+  7005.73640468  6996.26696178  6986.32136428  6976.91336005  6967.02920284]
+7059.15207987
+Found  d=    0.325
+Using dispersion guess of  0.32512
+(12,)
+[ 7045.42664401  7045.75176401  7045.101524    7361.11816598  7360.79304598]
+Using central wavelength 7045.43
+
+Old FFT Solution=
+[ 7045.42664401   665.68320416]
+Using nf= 2 amp
+New Solution= [ 7038.59040828   655.31579966   -21.88518855]
+MAD, BWT, RMS, LEN 12.3836916935 30.9315556186 33.8836412309 703
+10.8512101981 631
+New Solution= [ 7039.19547345   653.1347691    -22.77518543]
+MAD, BWT, RMS, LEN 8.45698894178 26.0359516477 32.0494301945 619
+20.5439393241 619
+New FFT Solution=
+[  7.04720846e+03   6.65064820e+02   4.26350663e-02]
+
+Old FFT Solution=
+[  7.04720846e+03   6.65064820e+02   4.26350663e-02]
+Using nf= 3 amp
+New Solution= [ 7043.5149084    647.84916517    10.08745423   -20.5247911 ]
+MAD, BWT, RMS, LEN 9.10560011738 21.3162611187 23.4428801639 790
+13.605315251 747
+New Solution= [ 7043.50958933   647.84939082    10.08730569   -20.52435467]
+MAD, BWT, RMS, LEN 7.97981559941 19.3063517486 22.480646325 742
+13.1042345605 738
+New Solution= [ 7043.63238422   647.62201191     9.99862042   -20.31915737]
+MAD, BWT, RMS, LEN 7.92515484671 19.2041799383 22.4805421841 737
+13.874599842 737
+New FFT Solution=
+[  7.04537429e+03   6.64619883e+02   1.08980569e+00  -3.84052099e-01]
+
+
+Trimming iterations= 1
+Solution =
+[  7.04574141e+03   6.64345402e+02   1.62616654e+00  -7.45772864e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   4.000  15.123   4.907
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.076   0.025
+
+Trimming iterations= 1
+Solution =
+[  7.04574141e+03   6.64345402e+02   1.62616654e+00  -7.45772864e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   2.000   7.562   2.454
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.076   0.025
+
+Trimming iterations= 1
+Solution =
+[  7.04574141e+03   6.64345402e+02   1.62616654e+00  -7.45772864e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   1.000   3.781   1.227
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.076   0.025
+
+Trimming iterations= 1
+Solution =
+[  7.04574141e+03   6.64345402e+02   1.62616654e+00  -7.45772864e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   2.521   0.818
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.076   0.025
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    57.82   3.95   5985.8   6402.27   6402.25   0.03 415246.88  Ne
+  2   464.85   3.63   2242.0   6532.86   6532.88  -0.02 193120.02  Ne
+  3   670.14   3.78   2957.4   6598.94   6598.95  -0.01 239493.94  Ne
+  4   916.08   3.95   5605.1   6678.26   6678.28  -0.02 393144.14  Ne
+  5  1036.08   3.91   4032.7   6717.02   6717.04  -0.02 274326.95  Ne
+  6  1692.05   3.89   6355.0   6929.49   6929.47   0.02 405460.16  Ne
+  7  1802.86   3.68   1083.1   6965.46   6965.43   0.03 57144.29  Ar
+  8  2116.12   3.67    586.4   7067.23   7067.22   0.02 44944.70  Ar
+  9  2444.21   3.64   1568.8   7173.94   7173.94   0.01 109459.96  Ne
+ 10  2748.41   3.63    341.6   7272.94   7272.94   0.01 30068.60  Ar
+ 11  3089.47   3.69   1338.9   7383.97   7383.98  -0.01 113570.12  Ar
+ 12  3258.16   3.71   3319.6   7438.88   7438.90  -0.02 190966.02  Ne
+ 13  3411.76   3.66    671.0   7488.86   7488.87  -0.01 36295.19  Ne
+ 14  3457.85   3.72   1545.0   7503.86   7503.87  -0.01 129372.80  Ar
+ 15  3490.99   3.69   1428.7   7514.64   7514.65  -0.01 117741.41  Ar
+ 16  3555.93   3.68    579.3   7535.77   7535.77  -0.01 30575.10  Ne
+ 17  3581.36   3.68    239.8   7544.04   7544.04  -0.01 13373.80  Ne
+ 18  3861.58   3.84   6297.1   7635.14   7635.11   0.04 519557.03  Ar
+
+Trimming iterations= 1
+Solution =
+[  7.04574141e+03   6.64345402e+02   1.62616654e+00  -7.45772864e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   2.521   0.818
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.076   0.025
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    57.82   3.95   5985.8   6402.27   6402.25   0.03 415246.88  Ne
+  2   464.85   3.63   2242.0   6532.86   6532.88  -0.02 193120.02  Ne
+  3   670.14   3.78   2957.4   6598.94   6598.95  -0.01 239493.94  Ne
+  4   916.08   3.95   5605.1   6678.26   6678.28  -0.02 393144.14  Ne
+  5  1036.08   3.91   4032.7   6717.02   6717.04  -0.02 274326.95  Ne
+  6  1692.05   3.89   6355.0   6929.49   6929.47   0.02 405460.16  Ne
+  7  1802.86   3.68   1083.1   6965.46   6965.43   0.03 57144.29  Ar
+  8  2116.12   3.67    586.4   7067.23   7067.22   0.02 44944.70  Ar
+  9  2444.21   3.64   1568.8   7173.94   7173.94   0.01 109459.96  Ne
+ 10  2748.41   3.63    341.6   7272.94   7272.94   0.01 30068.60  Ar
+ 11  3089.47   3.69   1338.9   7383.97   7383.98  -0.01 113570.12  Ar
+ 12  3258.16   3.71   3319.6   7438.88   7438.90  -0.02 190966.02  Ne
+ 13  3411.76   3.66    671.0   7488.86   7488.87  -0.01 36295.19  Ne
+ 14  3457.85   3.72   1545.0   7503.86   7503.87  -0.01 129372.80  Ar
+ 15  3490.99   3.69   1428.7   7514.64   7514.65  -0.01 117741.41  Ar
+ 16  3555.93   3.68    579.3   7535.77   7535.77  -0.01 30575.10  Ne
+ 17  3581.36   3.68    239.8   7544.04   7544.04  -0.01 13373.80  Ne
+ 18  3861.58   3.84   6297.1   7635.14   7635.11   0.04 519557.03  Ar
+Final Scatter =  0.0182776808914
+Dumping temp2_74557.fits [4096]
+Done with Wavelength Calibration for slit 1
+Wavelength Calibration RMS= 0.0182776808914
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 2
+Transforming.
+Going into wavelength calibration
+Dumping temp_74557.fits [4096]
+Searching for lines with 4.2 10.0
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+Found 40 good lines
+   61.93 (  4.76),    175.02 (  4.34),    387.03 (  4.38),    469.05 (  4.30),    674.37 (  4.33),    839.27 (  4.29),    920.40 (  4.37),   1040.45 (  4.32),   1628.83 (  4.49),   1696.49 (  4.29),   1807.31 (  4.11),   1987.80 (  4.14),   2013.47 (  6.77),   2027.18 (  0.00),   2071.67 (  4.33),   2095.72 (  4.09),   2120.65 (  4.09),   2281.82 (  4.11),   2366.13 (  4.08),   2448.82 (  4.08),   2603.00 (  4.09),   2667.74 (  4.82),   2753.04 (  4.08),   2797.04 (  4.21),   3057.83 (  4.21),   3094.18 (  4.13),   3262.92 (  4.15),   3365.97 (  4.24),   3416.55 (  4.08),   3462.64 (  4.14),   3495.79 (  4.11),   3560.74 (  4.07),   3586.16 (  4.11),   3719.64 (  4.15),   3763.14 (  5.59),   3779.41 (  0.00),   3866.43 (  4.25),   3887.75 (  4.34),   4020.87 (  4.11),   4049.55 (  4.07), 
+[ 4.16556749 -0.26322193]
+Cut down to 35 lines
+Using FWHM= 4.31801712421 0.125343351791
+
+   61.93 (  4.76),    175.02 (  4.34),    387.03 (  4.38),    469.05 (  4.30),    674.37 (  4.33),    839.27 (  4.29),    920.40 (  4.37),   1040.45 (  4.32),   1628.83 (  4.49),   1696.49 (  4.29),   1807.31 (  4.11),   1987.80 (  4.14),   2071.67 (  4.33),   2095.72 (  4.09),   2120.65 (  4.09),   2281.82 (  4.11),   2366.13 (  4.08),   2448.82 (  4.08),   2603.00 (  4.09),   2753.04 (  4.08),   2797.04 (  4.21),   3057.83 (  4.21),   3094.18 (  4.13),   3262.92 (  4.15),   3365.97 (  4.24),   3416.55 (  4.08),   3462.64 (  4.14),   3495.79 (  4.11),   3560.74 (  4.07),   3586.16 (  4.11),   3719.64 (  4.15),   3866.43 (  4.25),   3887.75 (  4.34),   4020.87 (  4.11),   4049.55 (  4.07), 
+
+
+amp
+Read 75 lines
+Constructing templates with w0,w1,dispersions: 6404.29 7715.01
+[ 0.29440001  0.29696     0.29951999  0.30208001  0.30464     0.30720001
+  0.30976     0.31231999  0.31488001  0.31743997  0.31999999  0.32256001
+  0.32512     0.32768002  0.33024001  0.33279997  0.33535999  0.33791998
+  0.34048     0.34303999]
+FFTing
+Cross correlating
+[ 7308.12360551  7108.64839938  7653.89765205  7648.70601054  7643.34023061
+  7069.17320045  7633.32552793  7628.07238903  7072.24520054  7062.50695976
+  7052.93000015  7038.03847917  7033.31527984  7023.93287765  7014.07687845
+  7004.4052048   6994.59016182  6984.63176438  6975.21096005  6965.3140029 ]
+7057.71847996
+Found  d=    0.325
+Using dispersion guess of  0.32512
+(14,)
+[ 7044.126164    7043.801044    7044.451284    7043.47592399  7359.49256597]
+Using central wavelength 7044.13
+
+Old FFT Solution=
+[ 7044.126164     665.68320416]
+Using nf= 2 amp
+New Solution= [ 7037.67370844   653.2476511    -18.47544358]
+MAD, BWT, RMS, LEN 13.9728274431 31.5142313908 34.3635369963 821
+18.3182337072 756
+New Solution= [ 7041.54117211   654.10509059   -17.66993829]
+MAD, BWT, RMS, LEN 10.5562772442 27.5033978017 32.9258233846 721
+18.2967833603 707
+New Solution= [ 7041.81063757   663.1632888    -14.79777994]
+MAD, BWT, RMS, LEN 8.94662706547 26.9858688725 33.0777472191 707
+19.477254014 706
+New Solution= [ 7041.81063757   663.1632888    -14.79777994]
+MAD, BWT, RMS, LEN 8.85372392016 26.8312380476 32.8795557733 705
+20.6765453928 705
+New FFT Solution=
+[  7.04573758e+03   6.65580677e+02   3.10567105e-02]
+
+Old FFT Solution=
+[  7.04573758e+03   6.65580677e+02   3.10567105e-02]
+Using nf= 3 amp
+New Solution= [ 7041.27663717   646.97272991     7.59318947   -15.46344083]
+MAD, BWT, RMS, LEN 9.40667740492 21.1319385705 23.4688801104 875
+14.4247938559 832
+New Solution= [ 7041.57957771   647.05946192     7.611216     -15.78061522]
+MAD, BWT, RMS, LEN 8.77645332874 19.6072828069 22.8706384132 824
+16.7423784689 806
+New Solution= [ 7044.14879498   649.35138302     9.30046568   -16.79473192]
+MAD, BWT, RMS, LEN 7.69387040203 19.2640828592 22.8163737612 794
+13.4278384228 794
+New FFT Solution=
+[  7.04379132e+03   6.64816380e+02   9.95166226e-01   6.01676891e-02]
+
+
+Trimming iterations= 1
+Solution =
+[  7.04427754e+03   6.64205816e+02   1.63619854e+00  -7.50928371e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   4.000  17.272   5.603
+UNWT BWT (pix and A) =   0.048   0.016
+UNWT RMS (pix and A) =   0.047   0.015
+  WT RMS (pix and A) =   0.065   0.021
+
+Trimming iterations= 1
+Solution =
+[  7.04427754e+03   6.64205816e+02   1.63619854e+00  -7.50928371e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   2.000   8.636   2.802
+UNWT BWT (pix and A) =   0.048   0.016
+UNWT RMS (pix and A) =   0.047   0.015
+  WT RMS (pix and A) =   0.065   0.021
+
+Trimming iterations= 1
+Solution =
+[  7.04427754e+03   6.64205816e+02   1.63619854e+00  -7.50928371e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   1.000   4.318   1.401
+UNWT BWT (pix and A) =   0.048   0.016
+UNWT RMS (pix and A) =   0.047   0.015
+  WT RMS (pix and A) =   0.065   0.021
+
+Trimming iterations= 1
+Solution =
+[  7.04427754e+03   6.64205816e+02   1.63619854e+00  -7.50928371e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   2.879   0.934
+UNWT BWT (pix and A) =   0.048   0.016
+UNWT RMS (pix and A) =   0.047   0.015
+  WT RMS (pix and A) =   0.065   0.021
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    61.93   4.76   5640.0   6402.27   6402.25   0.02 415246.88  Ne
+  2   469.05   4.30   2216.5   6532.86   6532.88  -0.02 193120.02  Ne
+  3   674.37   4.33   3000.7   6598.93   6598.95  -0.02 239493.94  Ne
+  4   920.40   4.37   5649.8   6678.27   6678.28  -0.01 393144.14  Ne
+  5  1040.45   4.32   4011.8   6717.04   6717.04  -0.01 274326.95  Ne
+  6  1696.49   4.29   6313.5   6929.48   6929.47   0.01 405460.16  Ne
+  7  1807.31   4.11   1077.7   6965.45   6965.43   0.02 57144.29  Ar
+  8  2120.65   4.09    585.0   7067.23   7067.22   0.02 44944.70  Ar
+  9  2448.82   4.08   1558.1   7173.95   7173.94   0.01 109459.96  Ne
+ 10  2753.04   4.08    342.0   7272.94   7272.94   0.00 30068.60  Ar
+ 11  3094.18   4.13   1315.1   7383.97   7383.98  -0.01 113570.12  Ar
+ 12  3262.92   4.15   3205.0   7438.88   7438.90  -0.02 190966.02  Ne
+ 13  3416.55   4.08    655.7   7488.87   7488.87  -0.00 36295.19  Ne
+ 14  3462.64   4.14   1527.3   7503.86   7503.87  -0.01 129372.80  Ar
+ 15  3495.79   4.11   1265.8   7514.64   7514.65  -0.01 117741.41  Ar
+ 16  3560.74   4.07    530.1   7535.77   7535.77  -0.01 30575.10  Ne
+ 17  3586.16   4.11    240.4   7544.03   7544.04  -0.01 13373.80  Ne
+ 18  3866.43   4.25   6360.6   7635.14   7635.11   0.03 519557.03  Ar
+
+Trimming iterations= 1
+Solution =
+[  7.04427754e+03   6.64205816e+02   1.63619854e+00  -7.50928371e-01]
+Using  18 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   2.879   0.934
+UNWT BWT (pix and A) =   0.048   0.016
+UNWT RMS (pix and A) =   0.047   0.015
+  WT RMS (pix and A) =   0.065   0.021
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    61.93   4.76   5640.0   6402.27   6402.25   0.02 415246.88  Ne
+  2   469.05   4.30   2216.5   6532.86   6532.88  -0.02 193120.02  Ne
+  3   674.37   4.33   3000.7   6598.93   6598.95  -0.02 239493.94  Ne
+  4   920.40   4.37   5649.8   6678.27   6678.28  -0.01 393144.14  Ne
+  5  1040.45   4.32   4011.8   6717.04   6717.04  -0.01 274326.95  Ne
+  6  1696.49   4.29   6313.5   6929.48   6929.47   0.01 405460.16  Ne
+  7  1807.31   4.11   1077.7   6965.45   6965.43   0.02 57144.29  Ar
+  8  2120.65   4.09    585.0   7067.23   7067.22   0.02 44944.70  Ar
+  9  2448.82   4.08   1558.1   7173.95   7173.94   0.01 109459.96  Ne
+ 10  2753.04   4.08    342.0   7272.94   7272.94   0.00 30068.60  Ar
+ 11  3094.18   4.13   1315.1   7383.97   7383.98  -0.01 113570.12  Ar
+ 12  3262.92   4.15   3205.0   7438.88   7438.90  -0.02 190966.02  Ne
+ 13  3416.55   4.08    655.7   7488.87   7488.87  -0.00 36295.19  Ne
+ 14  3462.64   4.14   1527.3   7503.86   7503.87  -0.01 129372.80  Ar
+ 15  3495.79   4.11   1265.8   7514.64   7514.65  -0.01 117741.41  Ar
+ 16  3560.74   4.07    530.1   7535.77   7535.77  -0.01 30575.10  Ne
+ 17  3586.16   4.11    240.4   7544.03   7544.04  -0.01 13373.80  Ne
+ 18  3866.43   4.25   6360.6   7635.14   7635.11   0.03 519557.03  Ar
+Final Scatter =  0.0156232474307
+Dumping temp2_74557.fits [4096]
+Done with Wavelength Calibration for slit 2
+Wavelength Calibration RMS= 0.0156232474307
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 3
+Transforming.
+Going into wavelength calibration
+Dumping temp_74557.fits [4096]
+Searching for lines with 4.2 10.0
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+Found 44 good lines
+    7.17 (  5.27),     67.36 (  5.83),    180.44 (  5.21),    392.54 (  5.30),    474.54 (  5.20),    679.91 (  5.22),    691.43 (  0.00),    844.90 (  5.13),    925.98 (  5.31),   1046.06 (  5.22),   1634.66 (  5.28),   1702.26 (  5.23),   1813.12 (  5.07),   1993.64 (  5.09),   2019.35 (  8.25),   2034.28 (  0.31),   2077.48 (  5.36),   2101.57 (  5.04),   2126.53 (  5.08),   2287.73 (  5.04),   2372.10 (  5.03),   2454.79 (  5.00),   2609.10 (  5.17),   2673.84 (  5.84),   2759.10 (  5.04),   2803.11 (  5.30),   3063.91 (  5.13),   3100.35 (  5.08),   3257.56 (  0.00),   3269.14 (  5.08),   3372.16 (  5.22),   3422.76 (  5.06),   3468.88 (  5.12),   3502.06 (  5.09),   3567.04 (  5.05),   3592.46 (  5.01),   3724.94 ( 22.38),   3725.96 (  5.10),   3769.49 (  6.64),   3785.99 (  0.00),   3872.79 (  5.26),   3894.07 (  5.36),   4027.28 (  5.06),   4055.95 (  5.05), 
+[ 5.11365941  0.61383073]
+Cut down to 38 lines
+Using FWHM= 5.27475165868 0.118694490479
+
+    7.17 (  5.27),     67.36 (  5.83),    180.44 (  5.21),    392.54 (  5.30),    474.54 (  5.20),    679.91 (  5.22),    844.90 (  5.13),    925.98 (  5.31),   1046.06 (  5.22),   1634.66 (  5.28),   1702.26 (  5.23),   1813.12 (  5.07),   1993.64 (  5.09),   2077.48 (  5.36),   2101.57 (  5.04),   2126.53 (  5.08),   2287.73 (  5.04),   2372.10 (  5.03),   2454.79 (  5.00),   2609.10 (  5.17),   2673.84 (  5.84),   2759.10 (  5.04),   2803.11 (  5.30),   3063.91 (  5.13),   3100.35 (  5.08),   3269.14 (  5.08),   3372.16 (  5.22),   3422.76 (  5.06),   3468.88 (  5.12),   3502.06 (  5.09),   3567.04 (  5.05),   3592.46 (  5.01),   3725.96 (  5.10),   3769.49 (  6.64),   3872.79 (  5.26),   3894.07 (  5.36),   4027.28 (  5.06),   4055.95 (  5.05), 
+
+
+amp
+Read 75 lines
+Constructing templates with w0,w1,dispersions: 6404.29 7715.01
+[ 0.29440001  0.29696     0.29951999  0.30208001  0.30464     0.30720001
+  0.30976     0.31231999  0.31488001  0.31743997  0.31999999  0.32256001
+  0.32512     0.32768002  0.33024001  0.33279997  0.33535999  0.33791998
+  0.34048     0.34303999]
+FFTing
+Cross correlating
+[ 6547.09958863  7106.5696794   7652.10053214  7646.89353051  7109.3063192
+  7067.33000036  7089.69672042  7080.2631196   7070.35592046  7060.60231992
+  7050.6900002   7036.42567911  7031.36455982  7022.29447755  7012.09543839
+  7002.075605    6992.24264189  6982.26632451  6972.82760006  6963.25576296]
+7043.55783966
+Found  d=    0.325
+Using dispersion guess of  0.32512
+(4,)
+[ 7041.85032398  7042.17544399  7041.52520398  7042.50056399]
+Using central wavelength 7041.85
+
+Old FFT Solution=
+[ 7041.85032398   665.68320416]
+Using nf= 2 amp
+New Solution= [ 7037.05501342   651.80642305   -19.47217664]
+MAD, BWT, RMS, LEN 9.10243319028 25.328911256 30.9795126984 825
+11.0546898644 801
+New Solution= [ 7036.59158136   659.08882688   -21.08074944]
+MAD, BWT, RMS, LEN 7.43499748088 22.5980021634 30.7698774845 788
+8.07433575988 787
+New Solution= [ 7037.76937694   673.28166508   -18.56567675]
+MAD, BWT, RMS, LEN 8.89839183852 26.0717834446 33.2827789732 785
+7.08986706585 783
+New Solution= [ 7037.56473296   672.63468464   -18.27533828]
+MAD, BWT, RMS, LEN 8.46872192661 25.3106358873 32.9222184007 780
+7.31667134587 779
+New Solution= [ 7037.56473296   672.63468464   -18.27533828]
+MAD, BWT, RMS, LEN 8.45555352385 25.1581622673 32.888969856 778
+6.32266380655 778
+New FFT Solution=
+[  7.04154758e+03   6.64730185e+02   5.48412126e-01]
+
+Old FFT Solution=
+[  7.04154758e+03   6.64730185e+02   5.48412126e-01]
+Using nf= 3 amp
+New Solution= [ 7042.11850896   649.58760997     9.50568768   -19.51619391]
+MAD, BWT, RMS, LEN 4.51706453336 14.9756840992 21.653906824 918
+9.75675635418 910
+New Solution= [ 7042.51301931   648.32939631     8.80457614   -18.49910098]
+MAD, BWT, RMS, LEN 4.54648791558 14.5499624431 21.3969161277 907
+10.8650193343 903
+New Solution= [ 7044.80373202   650.35277043     9.65308055   -17.59430106]
+MAD, BWT, RMS, LEN 4.04353683429 13.9931606434 20.9455894083 900
+5.61208009343 886
+New Solution= [ 7044.74699085   650.37913251     9.740847     -17.66586553]
+MAD, BWT, RMS, LEN 3.8656112885 12.6668154963 20.7191106452 884
+5.00228845428 881
+New Solution= [ 7044.73215452   650.37318523     9.39919908   -17.66551431]
+MAD, BWT, RMS, LEN 3.65519180615 11.381307943 20.5283870332 870
+4.61133366231 869
+New Solution= [ 7044.65004918   650.72012078     9.08802115   -17.4048785 ]
+MAD, BWT, RMS, LEN 3.54089422765 11.1037875163 20.5120629207 868
+4.60037855359 868
+New FFT Solution=
+[  7.04164007e+03   6.64919926e+02   5.69988113e-01   4.11715357e-02]
+
+
+Trimming iterations= 1
+Solution =
+[  7.04236854e+03   6.64023017e+02   1.63038295e+00  -7.36248399e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   4.000  21.099   6.843
+UNWT BWT (pix and A) =   0.058   0.019
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.063   0.021
+
+Trimming iterations= 1
+Solution =
+[  7.04236854e+03   6.64023017e+02   1.63038295e+00  -7.36248399e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   2.000  10.550   3.421
+UNWT BWT (pix and A) =   0.058   0.019
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.063   0.021
+
+Trimming iterations= 1
+Solution =
+[  7.04236854e+03   6.64023017e+02   1.63038295e+00  -7.36248399e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   1.000   5.275   1.711
+UNWT BWT (pix and A) =   0.058   0.019
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.063   0.021
+
+Trimming iterations= 1
+Solution =
+[  7.04236854e+03   6.64023017e+02   1.63038295e+00  -7.36248399e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   3.517   1.140
+UNWT BWT (pix and A) =   0.058   0.019
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.063   0.021
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1     7.17   5.27   2362.5   6383.01   6382.99   0.01 315144.14  Ne
+  2    67.36   5.83   5356.5   6402.26   6402.25   0.01 415246.88  Ne
+  3   474.54   5.20   2249.9   6532.86   6532.88  -0.03 193120.02  Ne
+  4   679.91   5.22   3003.4   6598.93   6598.95  -0.02 239493.94  Ne
+  5   925.98   5.31   5592.1   6678.26   6678.28  -0.01 393144.14  Ne
+  6  1046.06   5.22   4010.3   6717.04   6717.04  -0.00 274326.95  Ne
+  7  1702.26   5.23   6157.3   6929.48   6929.47   0.01 405460.16  Ne
+  8  1813.12   5.07   1085.9   6965.45   6965.43   0.02 57144.29  Ar
+  9  2126.53   5.08    576.1   7067.23   7067.22   0.01 44944.70  Ar
+ 10  2454.79   5.00   1549.5   7173.94   7173.94   0.01 109459.96  Ne
+ 11  2673.84   5.84   6197.5   7245.19   7245.17   0.03 532042.19  Ne
+ 12  2759.10   5.04    342.4   7272.93   7272.94  -0.00 30068.60  Ar
+ 13  3100.35   5.08   1308.8   7383.97   7383.98  -0.01 113570.12  Ar
+ 14  3269.14   5.08   3140.1   7438.88   7438.90  -0.02 190966.02  Ne
+ 15  3422.76   5.06    616.4   7488.85   7488.87  -0.02 36295.19  Ne
+ 16  3468.88   5.12   1455.9   7503.85   7503.87  -0.02 129372.80  Ar
+ 17  3502.06   5.09   1289.3   7514.64   7514.65  -0.01 117741.41  Ar
+ 18  3567.04   5.05    535.5   7535.77   7535.77  -0.01 30575.10  Ne
+ 19  3592.46   5.01    239.3   7544.03   7544.04  -0.01 13373.80  Ne
+ 20  3769.49   6.64   5434.8   7601.57   7601.55   0.03 716191.02  Kr
+ 21  3872.79   5.26   6379.2   7635.14   7635.11   0.03 519557.03  Ar
+
+Trimming iterations= 1
+Solution =
+[  7.04236854e+03   6.64023017e+02   1.63038295e+00  -7.36248399e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   3.517   1.140
+UNWT BWT (pix and A) =   0.058   0.019
+UNWT RMS (pix and A) =   0.054   0.018
+  WT RMS (pix and A) =   0.063   0.021
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1     7.17   5.27   2362.5   6383.01   6382.99   0.01 315144.14  Ne
+  2    67.36   5.83   5356.5   6402.26   6402.25   0.01 415246.88  Ne
+  3   474.54   5.20   2249.9   6532.86   6532.88  -0.03 193120.02  Ne
+  4   679.91   5.22   3003.4   6598.93   6598.95  -0.02 239493.94  Ne
+  5   925.98   5.31   5592.1   6678.26   6678.28  -0.01 393144.14  Ne
+  6  1046.06   5.22   4010.3   6717.04   6717.04  -0.00 274326.95  Ne
+  7  1702.26   5.23   6157.3   6929.48   6929.47   0.01 405460.16  Ne
+  8  1813.12   5.07   1085.9   6965.45   6965.43   0.02 57144.29  Ar
+  9  2126.53   5.08    576.1   7067.23   7067.22   0.01 44944.70  Ar
+ 10  2454.79   5.00   1549.5   7173.94   7173.94   0.01 109459.96  Ne
+ 11  2673.84   5.84   6197.5   7245.19   7245.17   0.03 532042.19  Ne
+ 12  2759.10   5.04    342.4   7272.93   7272.94  -0.00 30068.60  Ar
+ 13  3100.35   5.08   1308.8   7383.97   7383.98  -0.01 113570.12  Ar
+ 14  3269.14   5.08   3140.1   7438.88   7438.90  -0.02 190966.02  Ne
+ 15  3422.76   5.06    616.4   7488.85   7488.87  -0.02 36295.19  Ne
+ 16  3468.88   5.12   1455.9   7503.85   7503.87  -0.02 129372.80  Ar
+ 17  3502.06   5.09   1289.3   7514.64   7514.65  -0.01 117741.41  Ar
+ 18  3567.04   5.05    535.5   7535.77   7535.77  -0.01 30575.10  Ne
+ 19  3592.46   5.01    239.3   7544.03   7544.04  -0.01 13373.80  Ne
+ 20  3769.49   6.64   5434.8   7601.57   7601.55   0.03 716191.02  Kr
+ 21  3872.79   5.26   6379.2   7635.14   7635.11   0.03 519557.03  Ar
+Final Scatter =  0.0187608141564
+Dumping temp2_74557.fits [4096]
+Done with Wavelength Calibration for slit 3
+Wavelength Calibration RMS= 0.0187608141564
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 4
+Transforming.
+Going into wavelength calibration
+Dumping temp_74557.fits [4096]
+Searching for lines with 4.2 10.0
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+
+Found 43 good lines
+   14.06 (  6.02),     74.27 (  6.67),     96.23 (  0.00),    187.36 (  6.06),    399.42 (  6.19),    481.46 (  6.10),    686.85 (  6.12),    851.87 (  6.18),    932.95 (  6.30),   1053.02 (  6.24),   1530.45 (  6.58),   1633.04 (  6.54),   1641.84 (  6.31),   1709.46 (  6.20),   1734.78 (  0.00),   1820.34 (  6.06),   2000.94 (  6.11),   2026.73 (  9.60),   2084.78 (  6.40),   2108.91 (  6.07),   2133.89 (  6.10),   2295.13 (  6.10),   2379.54 (  6.05),   2462.25 (  6.01),   2616.61 (  6.22),   2681.38 (  6.87),   2766.67 (  6.06),   2810.52 (  7.26),   3071.64 (  6.09),   3108.04 (  6.08),   3276.91 (  6.07),   3379.92 (  6.18),   3430.65 (  6.08),   3476.75 (  6.12),   3509.92 (  6.10),   3574.95 (  6.04),   3600.41 (  6.06),   3733.92 (  6.14),   3777.49 (  7.80),   3880.82 (  6.34),   3902.10 (  6.73),   4035.39 (  6.15),   4064.05 (  6.11), 
+[ 5.99901017  0.57590669]
+Cut down to 40 lines
+Using FWHM= 6.30851877438 0.129215971177
+
+   14.06 (  6.02),     74.27 (  6.67),    187.36 (  6.06),    399.42 (  6.19),    481.46 (  6.10),    686.85 (  6.12),    851.87 (  6.18),    932.95 (  6.30),   1053.02 (  6.24),   1530.45 (  6.58),   1633.04 (  6.54),   1641.84 (  6.31),   1709.46 (  6.20),   1820.34 (  6.06),   2000.94 (  6.11),   2084.78 (  6.40),   2108.91 (  6.07),   2133.89 (  6.10),   2295.13 (  6.10),   2379.54 (  6.05),   2462.25 (  6.01),   2616.61 (  6.22),   2681.38 (  6.87),   2766.67 (  6.06),   2810.52 (  7.26),   3071.64 (  6.09),   3108.04 (  6.08),   3276.91 (  6.07),   3379.92 (  6.18),   3430.65 (  6.08),   3476.75 (  6.12),   3509.92 (  6.10),   3574.95 (  6.04),   3600.41 (  6.06),   3733.92 (  6.14),   3777.49 (  7.80),   3880.82 (  6.34),   3902.10 (  6.73),   4035.39 (  6.15),   4064.05 (  6.11), 
+
+
+amp
+Read 75 lines
+Constructing templates with w0,w1,dispersions: 6404.29 7715.01
+[ 0.29440001  0.29696     0.29951999  0.30208001  0.30464     0.30720001
+  0.30976     0.31231999  0.31488001  0.31743997  0.31999999  0.32256001
+  0.32512     0.32768002  0.33024001  0.33279997  0.33535999  0.33791998
+  0.34048     0.34303999]
+FFTing
+Cross correlating
+[ 6544.74438857  7104.49095943  7649.70437225  7644.47689047  7639.37991067
+  7064.87240025  7087.21864038  7077.76455965  7067.83688035  7058.06280013
+  7048.13000026  7034.49031904  7029.08871981  7020.0007174   7230.71432581
+  6999.41320523  6989.55976197  6979.56296467  6970.10376006  6960.51144304]
+7053.0964002
+Found  d=    0.325
+Using dispersion guess of  0.32512
+(4,)
+[ 7039.57448397  7039.24936397  7039.89960397  7038.92424397]
+Using central wavelength 7039.57
+
+Old FFT Solution=
+[ 7039.57448397   665.68320416]
+Using nf= 2 amp
+New Solution= [ 7034.76435806   653.11034513   -19.23842369]
+MAD, BWT, RMS, LEN 7.56984141215 25.387034262 32.0168025467 910
+11.4322352389 881
+New Solution= [ 7034.3953993    654.54396225   -18.91193072]
+MAD, BWT, RMS, LEN 7.46173019626 23.0627709379 32.0768924493 859
+2.14028635482 846
+New Solution= [ 7034.3953993    654.54396225   -18.91193072]
+MAD, BWT, RMS, LEN 7.41429817024 22.0622837426 32.1497988922 838
+1.36802484625 835
+New Solution= [ 7034.3953993    654.54396225   -18.91193072]
+MAD, BWT, RMS, LEN 7.2722989114 21.7967059341 31.5414302585 835
+1.31122918124 835
+New FFT Solution=
+[  7.03932200e+03   6.64209837e+02   4.95513820e-01]
+
+Old FFT Solution=
+[  7.03932200e+03   6.64209837e+02   4.95513820e-01]
+Using nf= 3 amp
+New Solution= [ 7040.46135301   650.23157701     8.9277658    -21.51710688]
+MAD, BWT, RMS, LEN 5.06421515787 15.691099294 22.6732927685 1072
+9.88878249103 1059
+New Solution= [ 7041.53243442   646.6923081      7.69206679   -24.22466459]
+MAD, BWT, RMS, LEN 4.87624008172 14.4010095034 22.8578160553 1054
+6.62518515857 1048
+New Solution= [ 7041.52972001   646.69241342     7.69205321   -24.22468331]
+MAD, BWT, RMS, LEN 4.90510664486 13.61500964 22.7648847086 1041
+3.11250521017 1035
+New Solution= [ 7041.66679167   646.76736608     7.68229668   -24.2094199 ]
+MAD, BWT, RMS, LEN 4.91800399268 13.2400873059 22.5441669754 1034
+3.02734937123 1032
+New Solution= [ 7041.66679167   646.76736608     7.68229668   -24.2094199 ]
+MAD, BWT, RMS, LEN 4.96826577796 12.955386348 22.4885855608 1029
+3.0216794937 1022
+New Solution= [ 7041.55748681   646.63050215     7.55303107   -23.66901867]
+MAD, BWT, RMS, LEN 4.70848876573 12.4978910957 22.0675435797 1016
+3.00573550185 1016
+New FFT Solution=
+[  7.03932175e+03   6.64210622e+02   4.93095669e-01  -1.49357771e-04]
+
+
+Trimming iterations= 1
+Solution =
+[  7.03998126e+03   6.63790151e+02   1.59701816e+00  -7.18309276e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   4.000  25.234   8.181
+UNWT BWT (pix and A) =   0.064   0.021
+UNWT RMS (pix and A) =   0.060   0.019
+  WT RMS (pix and A) =   0.070   0.023
+
+Trimming iterations= 1
+Solution =
+[  7.03998126e+03   6.63790151e+02   1.59701816e+00  -7.18309276e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   2.000  12.617   4.090
+UNWT BWT (pix and A) =   0.064   0.021
+UNWT RMS (pix and A) =   0.060   0.019
+  WT RMS (pix and A) =   0.070   0.023
+
+Trimming iterations= 1
+Solution =
+[  7.03998126e+03   6.63790151e+02   1.59701816e+00  -7.18309276e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   1.000   6.309   2.045
+UNWT BWT (pix and A) =   0.064   0.021
+UNWT RMS (pix and A) =   0.060   0.019
+  WT RMS (pix and A) =   0.070   0.023
+
+Trimming iterations= 1
+Solution =
+[  7.03998126e+03   6.63790151e+02   1.59701816e+00  -7.18309276e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   4.206   1.363
+UNWT BWT (pix and A) =   0.064   0.021
+UNWT RMS (pix and A) =   0.060   0.019
+  WT RMS (pix and A) =   0.070   0.023
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    14.06   6.02   2355.4   6383.00   6382.99   0.01 315144.14  Ne
+  2    74.27   6.67   5404.1   6402.27   6402.25   0.02 415246.88  Ne
+  3   481.46   6.10   2355.8   6532.86   6532.88  -0.02 193120.02  Ne
+  4   686.85   6.12   3137.5   6598.93   6598.95  -0.02 239493.94  Ne
+  5   932.95   6.30   5815.9   6678.26   6678.28  -0.01 393144.14  Ne
+  6  1053.02   6.24   4164.2   6717.02   6717.04  -0.02 274326.95  Ne
+  7  1709.46   6.20   6412.6   6929.49   6929.47   0.02 405460.16  Ne
+  8  1820.34   6.06   1155.2   6965.45   6965.43   0.02 57144.29  Ar
+  9  2133.89   6.10    605.7   7067.24   7067.22   0.02 44944.70  Ar
+ 10  2462.25   6.01   1593.1   7173.94   7173.94   0.01 109459.96  Ne
+ 11  2681.38   6.87   6374.4   7245.19   7245.17   0.03 532042.19  Ne
+ 12  2766.67   6.06    357.8   7272.93   7272.94  -0.00 30068.60  Ar
+ 13  3108.04   6.08   1414.6   7383.96   7383.98  -0.02 113570.12  Ar
+ 14  3276.91   6.07   3329.6   7438.87   7438.90  -0.03 190966.02  Ne
+ 15  3430.65   6.08    659.2   7488.86   7488.87  -0.01 36295.19  Ne
+ 16  3476.75   6.12   1569.0   7503.85   7503.87  -0.02 129372.80  Ar
+ 17  3509.92   6.10   1497.3   7514.63   7514.65  -0.02 117741.41  Ar
+ 18  3574.95   6.04    576.9   7535.76   7535.77  -0.01 30575.10  Ne
+ 19  3600.41   6.06    251.9   7544.04   7544.04  -0.00 13373.80  Ne
+ 20  3777.49   7.80   5733.0   7601.58   7601.55   0.03 716191.02  Kr
+ 21  3880.82   6.34   6508.4   7635.13   7635.11   0.03 519557.03  Ar
+
+Trimming iterations= 1
+Solution =
+[  7.03998126e+03   6.63790151e+02   1.59701816e+00  -7.18309276e-01]
+Using  21 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   4.206   1.363
+UNWT BWT (pix and A) =   0.064   0.021
+UNWT RMS (pix and A) =   0.060   0.019
+  WT RMS (pix and A) =   0.070   0.023
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    14.06   6.02   2355.4   6383.00   6382.99   0.01 315144.14  Ne
+  2    74.27   6.67   5404.1   6402.27   6402.25   0.02 415246.88  Ne
+  3   481.46   6.10   2355.8   6532.86   6532.88  -0.02 193120.02  Ne
+  4   686.85   6.12   3137.5   6598.93   6598.95  -0.02 239493.94  Ne
+  5   932.95   6.30   5815.9   6678.26   6678.28  -0.01 393144.14  Ne
+  6  1053.02   6.24   4164.2   6717.02   6717.04  -0.02 274326.95  Ne
+  7  1709.46   6.20   6412.6   6929.49   6929.47   0.02 405460.16  Ne
+  8  1820.34   6.06   1155.2   6965.45   6965.43   0.02 57144.29  Ar
+  9  2133.89   6.10    605.7   7067.24   7067.22   0.02 44944.70  Ar
+ 10  2462.25   6.01   1593.1   7173.94   7173.94   0.01 109459.96  Ne
+ 11  2681.38   6.87   6374.4   7245.19   7245.17   0.03 532042.19  Ne
+ 12  2766.67   6.06    357.8   7272.93   7272.94  -0.00 30068.60  Ar
+ 13  3108.04   6.08   1414.6   7383.96   7383.98  -0.02 113570.12  Ar
+ 14  3276.91   6.07   3329.6   7438.87   7438.90  -0.03 190966.02  Ne
+ 15  3430.65   6.08    659.2   7488.86   7488.87  -0.01 36295.19  Ne
+ 16  3476.75   6.12   1569.0   7503.85   7503.87  -0.02 129372.80  Ar
+ 17  3509.92   6.10   1497.3   7514.63   7514.65  -0.02 117741.41  Ar
+ 18  3574.95   6.04    576.9   7535.76   7535.77  -0.01 30575.10  Ne
+ 19  3600.41   6.06    251.9   7544.04   7544.04  -0.00 13373.80  Ne
+ 20  3777.49   7.80   5733.0   7601.58   7601.55   0.03 716191.02  Kr
+ 21  3880.82   6.34   6508.4   7635.13   7635.11   0.03 519557.03  Ar
+Final Scatter =  0.0208912453272
+Dumping temp2_74557.fits [4096]
+Done with Wavelength Calibration for slit 4
+Wavelength Calibration RMS= 0.0208912453272
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 5
+Transforming.
+Going into wavelength calibration
+Dumping temp_74557.fits [4096]
+Searching for lines with 4.2 10.0
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last five Jacobian evaluations.
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+Found 44 good lines
+   22.38 (  7.35),     82.60 (  8.08),    195.73 (  7.57),    251.39 (  7.81),    407.86 (  7.67),    489.90 (  7.58),    695.36 (  7.71),    860.45 (  7.66),    941.55 (  7.82),   1061.69 (  7.75),   1538.98 (  8.10),   1642.29 ( 17.17),   1650.68 ( 15.56),   1718.33 (  7.72),   1738.67 (  0.00),   1829.28 (  7.61),   2009.96 (  7.61),   2035.76 ( 11.75),   2035.75 ( 11.79),   2093.84 (  7.84),   2117.96 (  7.59),   2142.95 (  7.58),   2304.26 (  7.65),   2388.68 (  7.56),   2471.45 (  7.51),   2625.89 (  7.71),   2776.00 (  7.56),   2819.03 (  2.32),   3081.12 (  7.66),   3117.53 (  7.61),   3286.48 (  7.58),   3389.54 (  7.61),   3440.25 (  7.61),   3486.39 (  7.63),   3519.60 (  7.60),   3584.65 (  7.54),   3610.11 (  7.55),   3743.69 (  7.64),   3787.31 (  9.32),   3890.67 (  7.82),   3912.01 (  8.50),   3919.56 (  0.00),   4045.31 (  7.67),   4074.00 (  7.59), 
+[ 7.91240034 -0.68363512]
+Cut down to 37 lines
+Using FWHM= 7.70975094321 0.113404123526
+
+   22.38 (  7.35),     82.60 (  8.08),    195.73 (  7.57),    251.39 (  7.81),    407.86 (  7.67),    489.90 (  7.58),    695.36 (  7.71),    860.45 (  7.66),    941.55 (  7.82),   1061.69 (  7.75),   1538.98 (  8.10),   1718.33 (  7.72),   1829.28 (  7.61),   2009.96 (  7.61),   2093.84 (  7.84),   2117.96 (  7.59),   2142.95 (  7.58),   2304.26 (  7.65),   2388.68 (  7.56),   2471.45 (  7.51),   2625.89 (  7.71),   2776.00 (  7.56),   2819.03 (  2.32),   3081.12 (  7.66),   3117.53 (  7.61),   3286.48 (  7.58),   3389.54 (  7.61),   3440.25 (  7.61),   3486.39 (  7.63),   3519.60 (  7.60),   3584.65 (  7.54),   3610.11 (  7.55),   3743.69 (  7.64),   3890.67 (  7.82),   3912.01 (  8.50),   4045.31 (  7.67),   4074.00 (  7.59), 
+
+
+amp
+Read 75 lines
+Constructing templates with w0,w1,dispersions: 6404.29 7715.01
+[ 0.29440001  0.29696     0.29951999  0.30208001  0.30464     0.30720001
+  0.30976     0.31231999  0.31488001  0.31743997  0.31999999  0.32256001
+  0.32512     0.32768002  0.33024001  0.33279997  0.33535999  0.33791998
+  0.34048     0.34303999]
+FFTing
+Cross correlating
+[ 6542.09478852  7295.733197    7647.00869238  7641.75817042  7636.63815072
+  7062.10760012  7084.12104034  7074.64135971  7064.68808022  7055.20584037
+  7011.97000107  7032.23239895  7026.16263979  7017.0515972   7005.82087817
+  6996.08520552  6986.20616206  6976.18376487  6966.69896006  6956.73800316]
+7029.19751937
+Found  d=    0.325
+Using dispersion guess of  0.32512
+(29,)
+[ 7036.64840395  7036.97352395  7036.32328395  7037.29864395  7037.62376396]
+Using central wavelength 7036.65
+
+Old FFT Solution=
+[ 7036.64840395   665.68320416]
+Using nf= 2 amp
+New Solution= [ 7031.68960876   643.67401696   -17.47863654]
+MAD, BWT, RMS, LEN 12.9244860109 26.210990862 31.2235864327 1267
+13.9623323752 1185
+New Solution= [ 7031.76678448   652.04162404   -17.75254059]
+MAD, BWT, RMS, LEN 9.02794698024 22.253303733 30.1736262842 1143
+13.0093530667 1141
+New Solution= [ 7031.71065866   652.00668934   -17.6654937 ]
+MAD, BWT, RMS, LEN 9.03348875031 22.0344007794 30.1282241331 1138
+12.5983081117 1136
+New Solution= [ 7031.62283087   652.28131759   -18.14074702]
+MAD, BWT, RMS, LEN 8.7909703941 22.0462323153 30.1910937086 1128
+12.577274803 1128
+New FFT Solution=
+[ 7036.64840395   665.68320416     0.        ]
+
+Old FFT Solution=
+[ 7036.64840395   665.68320416     0.        ]
+Using nf= 3 amp
+New Solution= [ 7035.81809558   640.60545478     8.55368288   -19.18203082]
+MAD, BWT, RMS, LEN 9.33586982923 20.4693669551 22.8471396164 1485
+11.6088013887 1417
+New Solution= [  7.04003116e+03   6.41287520e+02   5.73186247e+00  -2.09699428e+01]
+MAD, BWT, RMS, LEN 8.44456766691 18.4623783899 22.0427669587 1406
+12.4949653606 1392
+New Solution= [  7.04030765e+03   6.42101968e+02   4.04473809e+00  -2.29854107e+01]
+MAD, BWT, RMS, LEN 7.55136442276 18.1567618474 22.1035641606 1390
+10.8696404164 1374
+New Solution= [  7.03996380e+03   6.42332140e+02   3.84730622e+00  -2.45598215e+01]
+MAD, BWT, RMS, LEN 7.02508543854 17.6112223442 21.9834189582 1369
+12.6751836529 1368
+New Solution= [  7.03996380e+03   6.42332140e+02   3.84730622e+00  -2.45598215e+01]
+MAD, BWT, RMS, LEN 7.01204655731 17.5916764956 21.9858842897 1367
+12.1277975551 1366
+New Solution= [  7.03995495e+03   6.42286670e+02   3.79364587e+00  -2.45331322e+01]
+MAD, BWT, RMS, LEN 7.01064352375 17.5781277289 21.9927256139 1366
+11.6980266537 1366
+New FFT Solution=
+[  7.03630589e+03   6.64712200e+02   7.99056978e-01   7.83285151e-01]
+
+
+Trimming iterations= 1
+Solution =
+[  7.03705145e+03   6.63507318e+02   1.59061474e+00  -7.13974965e-01]
+Using  19 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   4.000  30.839   9.994
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.017
+  WT RMS (pix and A) =   0.067   0.022
+
+Trimming iterations= 1
+Solution =
+[  7.03705145e+03   6.63507318e+02   1.59061474e+00  -7.13974965e-01]
+Using  19 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   2.000  15.420   4.997
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.017
+  WT RMS (pix and A) =   0.067   0.022
+
+Trimming iterations= 1
+Solution =
+[  7.03705145e+03   6.63507318e+02   1.59061474e+00  -7.13974965e-01]
+Using  19 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   1.000   7.710   2.498
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.017
+  WT RMS (pix and A) =   0.067   0.022
+
+Trimming iterations= 1
+Solution =
+[  7.03705145e+03   6.63507318e+02   1.59061474e+00  -7.13974965e-01]
+Using  19 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   5.140   1.666
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.017
+  WT RMS (pix and A) =   0.067   0.022
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    22.38   7.35   2315.5   6383.00   6382.99   0.01 315144.14  Ne
+  2    82.60   8.08   5386.8   6402.26   6402.25   0.02 415246.88  Ne
+  3   489.90   7.58   2428.2   6532.86   6532.88  -0.03 193120.02  Ne
+  4   695.36   7.71   3305.7   6598.93   6598.95  -0.02 239493.94  Ne
+  5   941.55   7.82   5992.1   6678.26   6678.28  -0.01 393144.14  Ne
+  6  1061.69   7.75   4277.0   6717.03   6717.04  -0.01 274326.95  Ne
+  7  1718.33   7.72   6597.7   6929.48   6929.47   0.01 405460.16  Ne
+  8  1829.28   7.61   1210.1   6965.45   6965.43   0.02 57144.29  Ar
+  9  2142.95   7.58    638.7   7067.24   7067.22   0.02 44944.70  Ar
+ 10  2471.45   7.51   1632.3   7173.95   7173.94   0.01 109459.96  Ne
+ 11  2776.00   7.56    371.3   7272.93   7272.94  -0.00 30068.60  Ar
+ 12  3117.53   7.61   1479.1   7383.96   7383.98  -0.02 113570.12  Ar
+ 13  3286.48   7.58   3504.1   7438.88   7438.90  -0.02 190966.02  Ne
+ 14  3440.25   7.61    703.9   7488.86   7488.87  -0.01 36295.19  Ne
+ 15  3486.39   7.63   1688.9   7503.85   7503.87  -0.02 129372.80  Ar
+ 16  3519.60   7.60   1610.7   7514.64   7514.65  -0.01 117741.41  Ar
+ 17  3584.65   7.54    617.2   7535.77   7535.77  -0.00 30575.10  Ne
+ 18  3610.11   7.55    271.1   7544.05   7544.04   0.00 13373.80  Ne
+ 19  3890.67   7.82   6756.5   7635.14   7635.11   0.04 519557.03  Ar
+
+Trimming iterations= 1
+Solution =
+[  7.03705145e+03   6.63507318e+02   1.59061474e+00  -7.13974965e-01]
+Using  19 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   0.667   5.140   1.666
+UNWT BWT (pix and A) =   0.056   0.018
+UNWT RMS (pix and A) =   0.054   0.017
+  WT RMS (pix and A) =   0.067   0.022
+  N   Center   FWHM      S      Wpred     Wtrue   deltaW    H     Line
+----------------------------------------------------------------------
+  1    22.38   7.35   2315.5   6383.00   6382.99   0.01 315144.14  Ne
+  2    82.60   8.08   5386.8   6402.26   6402.25   0.02 415246.88  Ne
+  3   489.90   7.58   2428.2   6532.86   6532.88  -0.03 193120.02  Ne
+  4   695.36   7.71   3305.7   6598.93   6598.95  -0.02 239493.94  Ne
+  5   941.55   7.82   5992.1   6678.26   6678.28  -0.01 393144.14  Ne
+  6  1061.69   7.75   4277.0   6717.03   6717.04  -0.01 274326.95  Ne
+  7  1718.33   7.72   6597.7   6929.48   6929.47   0.01 405460.16  Ne
+  8  1829.28   7.61   1210.1   6965.45   6965.43   0.02 57144.29  Ar
+  9  2142.95   7.58    638.7   7067.24   7067.22   0.02 44944.70  Ar
+ 10  2471.45   7.51   1632.3   7173.95   7173.94   0.01 109459.96  Ne
+ 11  2776.00   7.56    371.3   7272.93   7272.94  -0.00 30068.60  Ar
+ 12  3117.53   7.61   1479.1   7383.96   7383.98  -0.02 113570.12  Ar
+ 13  3286.48   7.58   3504.1   7438.88   7438.90  -0.02 190966.02  Ne
+ 14  3440.25   7.61    703.9   7488.86   7488.87  -0.01 36295.19  Ne
+ 15  3486.39   7.63   1688.9   7503.85   7503.87  -0.02 129372.80  Ar
+ 16  3519.60   7.60   1610.7   7514.64   7514.65  -0.01 117741.41  Ar
+ 17  3584.65   7.54    617.2   7535.77   7535.77  -0.00 30575.10  Ne
+ 18  3610.11   7.55    271.1   7544.05   7544.04   0.00 13373.80  Ne
+ 19  3890.67   7.82   6756.5   7635.14   7635.11   0.04 519557.03  Ar
+Final Scatter =  0.0182337524451
+Dumping temp2_74557.fits [4096]
+Done with Wavelength Calibration for slit 5
+Wavelength Calibration RMS= 0.0182337524451
+Wavelength Calibration Error? 0
+
+waverect -xdist -ydist rtd07526_Rf.fits -o 3 -w1 7715.01 -w2 9025.73 -d0 0.32 -ll deimos_linelist.dat -arcamp -fwhm 4.2
+waverect -xdist -ydist rtd07526_Rf.fits -o 3 -w1 7715.01 -w2 9025.73 -d0 0.32 -ll deimos_linelist.dat -arcamp -fwhm 4.2
+finished
+Starting wavelength calibration for 1
+Transforming.
+Going into wavelength calibration
+Dumping temp_74575.fits [4096]
+Searching for lines with 4.2 10.0
+Warning: The iteration is not making good progress, as measured by the 
+  improvement from the last ten iterations.
+
+Found 68 good lines
+   20.66 (  3.91),     90.79 (  3.67),    424.29 (  3.64),    525.06 (  3.62),    605.64 (  3.79),    652.69 (  3.78),    678.69 (  3.78),    697.85 (  3.72),    713.29 (  3.74),    772.70 (  3.66),    868.15 (  0.00),    893.20 (  3.75),    906.95 (  0.00),    920.00 (  3.77),   1059.07 (  3.74),   1130.49 (  3.88),   1197.92 (  4.78),   1225.32 (  5.71),   1232.80 (  4.16),   1265.10 (  7.42),   1275.16 (  5.15),   1298.61 (  3.90),   1466.08 (  4.00),   1517.00 (  3.88),   1596.17 (  3.84),   1683.22 (  4.80),   1695.50 (  7.16),   1723.95 (  3.95),   1748.96 (  5.72),   1804.67 (  4.25),   1957.89 (  3.96),   2017.47 (  3.87),   2054.86 (  3.96),   2151.48 (  4.24),   2183.65 (  4.04),   2203.35 (  4.00),   2325.79 (  3.87),   2392.68 (  3.91),   2427.27 (  3.90),   2470.19 (  3.96),   2510.10 (  4.02),   2584.03 (  3.86),   2668.90 (  3.91),   2705.70 (  3.97),   2732.38 (  3.90),   2871.01 (  3.97),   2910.64 (  4.10),   2912.07 (  9.63),   2934.22 (  4.11),   2977.62 (  4.00),   3014.66 (  4.03),   3022.45 (  3.94),   3093.72 (  3.93),   3207.12 (  4.06),   3286.94 (  4.80),   3311.22 (  4.54),   3327.61 (  4.29),   3340.09 (  4.20),   3350.22 (  4.16),   3465.46 (  4.38),   3577.16 (  4.17),   3604.66 (  4.13),   3615.64 (  4.26),   3755.53 (  4.20),   3790.60 (  4.22),   3820.60 (  4.21),   3897.50 (  4.25),   4015.00 (  6.65), 
+[ 4.16886065  0.54091063]
+Cut down to 57 lines
+Using FWHM= 4.1574285499 0.209906525214
+
+   20.66 (  3.91),     90.79 (  3.67),    424.29 (  3.64),    525.06 (  3.62),    605.64 (  3.79),    652.69 (  3.78),    678.69 (  3.78),    697.85 (  3.72),    713.29 (  3.74),    772.70 (  3.66),    893.20 (  3.75),    920.00 (  3.77),   1059.07 (  3.74),   1130.49 (  3.88),   1232.80 (  4.16),   1298.61 (  3.90),   1466.08 (  4.00),   1517.00 (  3.88),   1596.17 (  3.84),   1723.95 (  3.95),   1804.67 (  4.25),   1957.89 (  3.96),   2017.47 (  3.87),   2054.86 (  3.96),   2151.48 (  4.24),   2183.65 (  4.04),   2203.35 (  4.00),   2325.79 (  3.87),   2392.68 (  3.91),   2427.27 (  3.90),   2470.19 (  3.96),   2510.10 (  4.02),   2584.03 (  3.86),   2668.90 (  3.91),   2705.70 (  3.97),   2732.38 (  3.90),   2871.01 (  3.97),   2910.64 (  4.10),   2934.22 (  4.11),   2977.62 (  4.00),   3014.66 (  4.03),   3022.45 (  3.94),   3093.72 (  3.93),   3207.12 (  4.06),   3286.94 (  4.80),   3311.22 (  4.54),   3327.61 (  4.29),   3340.09 (  4.20),   3350.22 (  4.16),   3465.46 (  4.38),   3577.16 (  4.17),   3604.66 (  4.13),   3615.64 (  4.26),   3755.53 (  4.20),   3790.60 (  4.22),   3820.60 (  4.21),   3897.50 (  4.25), 
+
+
+amp
+Read 75 lines
+Constructing templates with w0,w1,dispersions: 7715.01 9025.73
+[ 0.29440001  0.29696     0.29951999  0.30208001  0.30464     0.30720001
+  0.30976     0.31231999  0.31488001  0.31743997  0.31999999  0.32256001
+  0.32512     0.32768002  0.33024001  0.33279997  0.33535999  0.33791998
+  0.34048     0.34303999]
+FFTing
+Cross correlating
+[ 8239.36199709  8297.02088093  7774.02570804  7765.30374917  8418.80775922
+  8381.12200051  8400.72648042  8388.48455965  8384.22472059  8380.21063917
+  8376.12999987  8372.62792009  8370.69512     8367.74855983  8375.32360017
+  8362.05000072  8358.63240033  8344.01224154  8340.74824002  8349.10152065]
+8369.22183991
+Found  d=    0.315
+Using dispersion guess of  0.31488
+(20,)
+[ 8192.0532204   8896.12493051  8192.36810041  8191.73834039  8896.43981052]
+Using central wavelength 8192.05
+
+Old FFT Solution=
+[ 8192.0532204    644.71682757]
+Using nf= 2 amp
+New Solution= [ 8194.42106178   645.15216449   -21.38112237]
+MAD, BWT, RMS, LEN 22.522425873 33.9960509672 35.4358982018 799
+24.0200766802 753
+New Solution= [ 8190.28783972   644.14603362   -19.57393109]
+MAD, BWT, RMS, LEN 20.3142571594 32.2509384185 34.3568080339 739
+26.8384718078 739
+New FFT Solution=
+[  8.19202545e+03   6.44644763e+02   3.58242605e-01]
+
+Old FFT Solution=
+[  8.19202545e+03   6.44644763e+02   3.58242605e-01]
+Using nf= 3 amp
+New Solution= [  8.19478865e+03   6.46792858e+02  -8.57788821e+00  -3.92587801e+00]
+MAD, BWT, RMS, LEN 14.8131718758 24.7317107642 25.4278381418 911
+14.1498921544 853
+New Solution= [  8.19518230e+03   6.47339389e+02  -1.03198966e+01  -5.34117544e+00]
+MAD, BWT, RMS, LEN 14.9592881355 24.7634231105 25.7074904899 831
+18.1877634083 823
+New Solution= [  8.19515216e+03   6.47365148e+02  -1.03481617e+01  -5.39765007e+00]
+MAD, BWT, RMS, LEN 14.9388646594 24.8391794588 25.807131186 814
+14.7898655852 802
+New Solution= [  8.19515216e+03   6.47365148e+02  -1.03481617e+01  -5.39765007e+00]
+MAD, BWT, RMS, LEN 14.501910855 24.8799001823 25.8569761928 802
+16.0481481321 801
+New Solution= [  8.19513019e+03   6.47397532e+02  -1.03668792e+01  -5.41448554e+00]
+MAD, BWT, RMS, LEN 14.3881858364 24.8529805852 25.8461312275 799
+16.5808510565 799
+New FFT Solution=
+[  8.19464516e+03   6.49732505e+02  -1.10424312e+01  -4.50946579e+00]
+
+
+Trimming iterations= 1
+Solution =
+[  8.20206726e+03   6.35336053e+02   6.04433531e+00  -1.22798948e+01]
+Using   6 features.
+Using minamp=  5.000
+   Range (fwhm, pix and A) =   4.000  16.630   5.160
+UNWT BWT (pix and A) =   1.318   0.409
+UNWT RMS (pix and A) =   1.260   0.391
+  WT RMS (pix and A) =   1.188   0.369
+Traceback (most recent call last):
+  File "/usr/local/CarPy/dist/bin_oldnumeric/waverect", line 148, in <module>
+    cpd=cpd,pgapop=pgapop,pgamit=pgamit,bth=bth,wzero=wzero,wtol=1.0,verb=verb,wide=wide)
+  File "/usr/local/CarPy/dist/lib_oldnumeric/Expector.py", line 35, in wcalib
+    tempfits=tempfits,temp2fits=temp2fits,wide=wide)
+  File "/usr/local/CarPy/dist/lib_oldnumeric/LineIdentify.py", line 1235, in wavecalib
+    res,sol = dispsol(sol,basis,x,p,f,q,lw,ln,lh,lt,lu,wr,fwhm,mamp,wzero,ltype,usep2=usep2,useqr=useqr,verb=verb)
+  File "/usr/local/CarPy/dist/lib_oldnumeric/LineIdentify.py", line 558, in dispsol
+    raise "LackOfFeaturesError"
+TypeError: exceptions must be old-style classes or derived from BaseException, not str
+1
+DE.20130610.20148.fits[3] -> d20148_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d20148_B.fits[295:1390,*] -> td20148_B.fits
+DE.20130610.20148.fits[7] -> d20148_R.fits
+d20148_R.fits[686:1775,*]
+d20148_R.fits[686:1775,*] -> td20148_R.fits
+
+Transforming image rtd20148_R.fits to image rtd20148_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+1
+DE.20130610.20886.fits[3] -> d20886_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d20886_B.fits[295:1390,*] -> td20886_B.fits
+DE.20130610.20886.fits[7] -> d20886_R.fits
+d20886_R.fits[686:1775,*]
+d20886_R.fits[686:1775,*] -> td20886_R.fits
+
+Transforming image rtd20886_R.fits to image rtd20886_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+1
+DE.20130610.21558.fits[3] -> d21558_B.fits
+1200G {'blvmreg': '[295:1390,*]', 'rslits': [5, 54, 186, 242, 394, 466, 606, 682, 818, 890, 1030], 'dispersion': 0.32, 'rlvmreg': '[686:1775,*]', 'bslits': [5, 31, 191, 246, 400, 455, 611, 673, 819, 887, 1037], 'FWHM': 4.25, 'tiltkey': 'G4TLTWAV'}
+d21558_B.fits[295:1390,*] -> td21558_B.fits
+DE.20130610.21558.fits[7] -> d21558_R.fits
+d21558_R.fits[686:1775,*]
+d21558_R.fits[686:1775,*] -> td21558_R.fits
+
+Transforming image rtd21558_R.fits to image rtd21558_R.fits
+    xshift: 4097.00 yshift: 1091.00 xmag: 1.00 ymag: 1.00 xrot: 180.00 yrot: 180.00
+copyrect -ydist Sharp-B.fits rtd20148_B.fits
+copyrect -ydist Sharp-B.fits rtd20148_B.fits
+finished
+Copying solution to rtd20148_B.fits
+copyrect -ydist Sharp-R.fits rtd20148_R.fits
+copyrect -ydist Sharp-R.fits rtd20148_R.fits
+finished
+Copying solution to rtd20148_R.fits
+copyslit Flat-B.fits rtd20148_B.fits -fft -ydist
+copyslit Flat-B.fits rtd20148_B.fits -fft -ydist
+finished
+Working on rtd20148_B.fits
+Found shift= -32
+. . . . .
+copyslit Flat-R.fits rtd20148_R.fits -fft -ydist
+copyslit Flat-R.fits rtd20148_R.fits -fft -ydist
+finished
+Working on rtd20148_R.fits
+Found shift= -39
+. . . . .
+flat2d Flat-Bflt.fits rtd20148_B.fits
+flat2d Flat-Bflt.fits rtd20148_B.fits
+finished
+rtd20148_B.fits --> rtd20148_Bf.fits
+flat2d Flat-Rflt.fits rtd20148_R.fits
+flat2d Flat-Rflt.fits rtd20148_R.fits
+finished
+rtd20148_R.fits --> rtd20148_Rf.fits
+copyrect -xdist xdist_B.fits rtd20148_Bf.fits
+copyrect -xdist xdist_B.fits rtd20148_Bf.fits
+finished
+Copying solution to rtd20148_Bf.fits
+copyrect -xdist xdist_R.fits rtd20148_Rf.fits
+copyrect -xdist xdist_R.fits rtd20148_Rf.fits
+finished
+Copying solution to rtd20148_Rf.fits
+copyrect -wdist rtd07526_Bf.fits rtd20148_Bf.fits
+copyrect -wdist rtd07526_Bf.fits rtd20148_Bf.fits
+finished
+Copying solution to rtd20148_Bf.fits
+copyrect -wdist rtd07526_Rf.fits rtd20148_Rf.fits
+copyrect -wdist rtd07526_Rf.fits rtd20148_Rf.fits
+finished
+Traceback (most recent call last):
+  File "/usr/local/CarPy/dist/bin_oldnumeric/copyrect", line 26, in <module>
+    S=readsol(image,tl+"0xfm")
+  File "/usr/local/CarPy/dist/lib_oldnumeric/Expector.py", line 76, in readsol
+    efn = eval(f[keyroot+"n"])
+  File "<string>", line 1, in <module>
+NameError: name 'N' is not defined
+waverect -wdist -ydist rtd20148_Bf.fits -ll skylines.txt -zero 1 -skyamp
+waverect -wdist -ydist rtd20148_Bf.fits -ll skylines.txt -zero 1 -skyamp
+finished
+Starting wavelength calibration for 1
+Transforming.
+Going into wavelength calibration
+Dumping temp2_74923.fits [4096]
+Dumping temp_74923.fits [4096]
+Searching for lines with 5.0 10.0
+Done with Wavelength Calibration for slit 1
+Wavelength Calibration RMS= 1e+24
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 2
+Transforming.
+Going into wavelength calibration
+Dumping temp2_74923.fits [4096]
+Dumping temp_74923.fits [4096]
+Searching for lines with 5.0 10.0
+Done with Wavelength Calibration for slit 2
+Wavelength Calibration RMS= 1e+24
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 3
+Transforming.
+Going into wavelength calibration
+Dumping temp2_74923.fits [4096]
+Dumping temp_74923.fits [4096]
+Searching for lines with 5.0 10.0
+Done with Wavelength Calibration for slit 3
+Wavelength Calibration RMS= 1e+24
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 4
+Transforming.
+Going into wavelength calibration
+Dumping temp2_74923.fits [4096]
+Dumping temp_74923.fits [4096]
+Searching for lines with 5.0 10.0
+Done with Wavelength Calibration for slit 4
+Wavelength Calibration RMS= 1e+24
+Wavelength Calibration Error? 0
+
+Starting wavelength calibration for 5
+Transforming.
+Going into wavelength calibration
+Dumping temp2_74923.fits [4096]
+Dumping temp_74923.fits [4096]
+Searching for lines with 5.0 10.0
+Done with Wavelength Calibration for slit 5
+Wavelength Calibration RMS= 1e+24
+Wavelength Calibration Error? 0
+
+Wavelength offsets:
+[ 0.  0.  0.  0.  0.]
+Median, biweight offsets:
+0.0 [0.0, 0.0]
+waverect -wdist -ydist rtd20148_Rf.fits -ll skylines.txt -zero 1 -skyamp
+waverect -wdist -ydist rtd20148_Rf.fits -ll skylines.txt -zero 1 -skyamp
+finished
+Starting wavelength calibration for 1
+Traceback (most recent call last):
+  File "/usr/local/CarPy/dist/bin_oldnumeric/waverect", line 104, in <module>
+    dum1,dum2,wsol1,dum3,dum4,=readsol(image,"w"+str(nupy)+"xfm")
+  File "/usr/local/CarPy/dist/lib_oldnumeric/Expector.py", line 76, in readsol
+    efn = eval(f[keyroot+"n"])
+  File "<string>", line 1, in <module>
+NameError: name 'N' is not defined
+[]
+skyrect -ydist rtd20148_Bf.fits -skyint 512 -kx 3 -ky 1 -b 5 -dkx 1.00 -skycut 5.0 -check 15 -pct 40 -g 1.28 -rn 2.69
+skyrect -ydist rtd20148_Bf.fits -skyint 512 -kx 3 -ky 1 -b 5 -dkx 1.00 -skycut 5.0 -check 15 -pct 40 -g 1.28 -rn 2.69
+finished
+Slit   1 of rtd20148_Bf.fits -- Rows    1 to  158: 
+Reading between: 0 163
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 66037
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 65951.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (65951,65951)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.31 1.31 1.31 9.16
+Currently analyzing 496.0 to 1040.0
+Number of points= 67664
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 67658.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (67658,67658)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.28 1.29 2.59 7.77
+Currently analyzing 1008.0 to 1552.0
+Number of points= 67798
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 67796.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (67796,67796)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.25 1.28 3.84 6.40
+Currently analyzing 1520.0 to 2064.0
+Number of points= 68009
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 68006.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (68006,68006)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.25 1.27 5.09 5.09
+Currently analyzing 2032.0 to 2576.0
+Number of points= 67686
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 67682.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (67682,67682)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.27 1.27 6.36 3.82
+Currently analyzing 2544.0 to 3088.0
+Number of points= 67792
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 67735.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (67735,67735)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.27 1.27 7.63 2.54
+Currently analyzing 3056.0 to 3600.0
+Number of points= 67995
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 67754.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (67754,67754)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.25 1.27 8.88 1.27
+Currently analyzing 3568.0 to 4095.0
+Number of points= 65574
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 65253.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (65253,65253)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.22 1.26 10.09 0.00
+Writing.
+Done.
+Slit   2 of rtd20148_Bf.fits -- Rows  213 to  367: 
+Reading between: 209 371
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 62397
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 62357.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (62357,62357)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.16 1.16 1.16 8.15
+Currently analyzing 496.0 to 1040.0
+Number of points= 64637
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 64606.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (64606,64606)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.21 1.19 2.37 7.12
+Currently analyzing 1008.0 to 1552.0
+Number of points= 64734
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 64731.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (64731,64731)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.21 1.20 3.59 5.98
+Currently analyzing 1520.0 to 2064.0
+Number of points= 64272
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 64228.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (64228,64228)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.19 1.19 4.78 4.78
+Currently analyzing 2032.0 to 2576.0
+Number of points= 64711
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 64677.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (64677,64677)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.19 1.19 5.97 3.58
+Currently analyzing 2544.0 to 3088.0
+Number of points= 64734
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 64729.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (64729,64729)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.19 1.19 7.16 2.39
+Currently analyzing 3056.0 to 3600.0
+Number of points= 64305
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 64268.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (64268,64268)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.21 1.20 8.37 1.20
+Currently analyzing 3568.0 to 4095.0
+Number of points= 62677
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 62582.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (62582,62582)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.19 1.19 9.56 0.00
+Writing.
+Done.
+Slit   3 of rtd20148_Bf.fits -- Rows  422 to  578: 
+Reading between: 418 584
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 63856
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 1.0 520.0
+Keeping 52773.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (52773,52773)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [1:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.18 1.18 1.18 8.27
+Currently analyzing 496.0 to 1040.0
+Number of points= 65742
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 53556.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53556,53556)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.24 1.21 2.42 7.25
+Currently analyzing 1008.0 to 1552.0
+Number of points= 65406
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 53021.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53021,53021)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.25 1.22 3.67 6.11
+Currently analyzing 1520.0 to 2064.0
+Number of points= 65824
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 53252.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53252,53252)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.21 1.22 4.88 4.88
+Currently analyzing 2032.0 to 2576.0
+Number of points= 65645
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 53206.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53206,53206)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.20 1.22 6.08 3.65
+Currently analyzing 2544.0 to 3088.0
+Number of points= 65540
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 53364.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53364,53364)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.18 1.21 7.26 2.42
+Currently analyzing 3056.0 to 3600.0
+Number of points= 65826
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 54103.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (54103,54103)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.19 1.21 8.45 1.21
+Currently analyzing 3568.0 to 4095.0
+Number of points= 63447
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 52313.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (52313,52313)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.16 1.20 9.62 0.00
+Writing.
+Done.
+Slit   4 of rtd20148_Bf.fits -- Rows  640 to  786: 
+Reading between: 635 793
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 58485
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 57352.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (57352,57352)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.09 1.09 1.09 7.66
+Currently analyzing 496.0 to 1040.0
+Number of points= 60064
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 58030.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (58030,58030)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.11 1.10 2.21 6.62
+Currently analyzing 1008.0 to 1552.0
+Number of points= 60391
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 59288.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59288,59288)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.12 1.11 3.33 5.55
+Currently analyzing 1520.0 to 2064.0
+Number of points= 60109
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1529.0 2056.0
+Keeping 60049.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60049,60049)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1529:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.15 1.12 4.47 4.47
+Currently analyzing 2032.0 to 2576.0
+Number of points= 60233
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2041.0 2568.0
+Keeping 60228.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60228,60228)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2041:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.12 1.12 5.60 3.36
+Currently analyzing 2544.0 to 3088.0
+Number of points= 60383
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 60344.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60344,60344)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.12 1.12 6.72 2.24
+Currently analyzing 3056.0 to 3600.0
+Number of points= 60009
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3065.0 3592.0
+Keeping 59901.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59901,59901)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3065:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.13 1.12 7.85 1.12
+Currently analyzing 3568.0 to 4095.0
+Number of points= 58432
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 58404.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (58404,58404)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.11 1.12 8.96 0.00
+Writing.
+Done.
+Slit   5 of rtd20148_Bf.fits -- Rows  854 to 1004: 
+Reading between: 848 1012
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 60420
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 58269.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (58269,58269)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.14 1.14 1.14 7.99
+Currently analyzing 496.0 to 1040.0
+Number of points= 62572
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 59371.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59371,59371)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.16 1.15 2.30 6.90
+Currently analyzing 1008.0 to 1552.0
+Number of points= 62223
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 60038.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60038,60038)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.16 1.15 3.45 5.76
+Currently analyzing 1520.0 to 2064.0
+Number of points= 62471
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 61982.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (61982,61982)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.15 1.15 4.61 4.61
+Currently analyzing 2032.0 to 2576.0
+Number of points= 62525
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 62506.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (62506,62506)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.17 1.16 5.78 3.47
+Currently analyzing 2544.0 to 3088.0
+Number of points= 62180
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2553.0 3080.0
+Keeping 62096.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (62096,62096)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2553:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.15 1.16 6.93 2.31
+Currently analyzing 3056.0 to 3600.0
+Number of points= 62557
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3065.0 3592.0
+Keeping 62287.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (62287,62287)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3065:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.19 1.16 8.12 1.16
+Currently analyzing 3568.0 to 4095.0
+Number of points= 60299
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3577.0 4095.0
+Keeping 60210.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60210,60210)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3577:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.13 1.16 9.26 0.00
+Writing.
+Done.
+skyrect -ydist rtd20148_Rf.fits -skyint 512 -kx 3 -ky 1 -b 5 -dkx 1.00 -skycut 5.0 -check 15 -pct 40 -g 1.28 -rn 2.69
+skyrect -ydist rtd20148_Rf.fits -skyint 512 -kx 3 -ky 1 -b 5 -dkx 1.00 -skycut 5.0 -check 15 -pct 40 -g 1.28 -rn 2.69
+finished
+Slit   1 of rtd20148_Rf.fits -- Rows   14 to  146: 
+Reading between: 9 155
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 47093
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 47091.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (47091,47091)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 0.93 0.93 0.93 6.53
+Currently analyzing 496.0 to 1040.0
+Number of points= 48820
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 48819.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48819,48819)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 0.95 0.94 1.88 5.64
+Currently analyzing 1008.0 to 1552.0
+Number of points= 48732
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 48725.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48725,48725)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 0.92 0.93 2.80 4.66
+Currently analyzing 1520.0 to 2064.0
+Number of points= 48979
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 48975.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48975,48975)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 0.93 0.93 3.73 3.73
+Currently analyzing 2032.0 to 2576.0
+Number of points= 49271
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 49238.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (49238,49238)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 0.96 0.94 4.69 2.81
+Currently analyzing 2544.0 to 3088.0
+Number of points= 49194
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2553.0 3080.0
+Keeping 48802.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48802,48802)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2553:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 0.95 0.94 5.64 1.88
+Currently analyzing 3056.0 to 3600.0
+Number of points= 49505
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3065.0 3592.0
+Keeping 48347.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48347,48347)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3065:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 0.94 0.94 6.58 0.94
+Currently analyzing 3568.0 to 4095.0
+Number of points= 48083
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3577.0 4095.0
+Keeping 46455.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (46455,46455)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3577:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 0.97 0.94 7.55 0.00
+Writing.
+Done.
+Slit   2 of rtd20148_Rf.fits -- Rows  202 to  354: 
+Reading between: 193 367
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 57579
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 57540.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (57540,57540)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.16 1.16 1.16 8.12
+Currently analyzing 496.0 to 1040.0
+Number of points= 59472
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 59428.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59428,59428)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.19 1.17 2.35 7.04
+Currently analyzing 1008.0 to 1552.0
+Number of points= 59723
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 59712.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59712,59712)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.24 1.20 3.59 5.98
+Currently analyzing 1520.0 to 2064.0
+Number of points= 59910
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 59808.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59808,59808)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.23 1.21 4.82 4.82
+Currently analyzing 2032.0 to 2576.0
+Number of points= 60056
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 60044.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60044,60044)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.18 1.20 6.00 3.60
+Currently analyzing 2544.0 to 3088.0
+Number of points= 60243
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 60009.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (60009,60009)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.17 1.19 7.16 2.39
+Currently analyzing 3056.0 to 3600.0
+Number of points= 60492
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 59483.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (59483,59483)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.17 1.19 8.34 1.19
+Currently analyzing 3568.0 to 4095.0
+Number of points= 58699
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 57119.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (57119,57119)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.15 1.19 9.49 0.00
+Writing.
+Done.
+Slit   3 of rtd20148_Rf.fits -- Rows  426 to  566: 
+Reading between: 413 583
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 51313
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 46981.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (46981,46981)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.01 1.01 1.01 7.05
+Currently analyzing 496.0 to 1040.0
+Number of points= 53014
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1032.0
+Keeping 47695.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (47695,47695)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1032]
+X,Time,Mean,Elapsed,Remaining = 1032.00 1.03 1.02 2.03 6.10
+Currently analyzing 1008.0 to 1552.0
+Number of points= 53208
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1016.0 1544.0
+Keeping 47484.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (47484,47484)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1016:1544]
+X,Time,Mean,Elapsed,Remaining = 1544.00 1.03 1.02 3.06 5.10
+Currently analyzing 1520.0 to 2064.0
+Number of points= 53347
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1528.0 2056.0
+Keeping 47833.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (47833,47833)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1528:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.02 1.02 4.08 4.08
+Currently analyzing 2032.0 to 2576.0
+Number of points= 53507
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2041.0 2568.0
+Keeping 48260.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48260,48260)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2041:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.04 1.02 5.12 3.07
+Currently analyzing 2544.0 to 3088.0
+Number of points= 53701
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 48861.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48861,48861)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.04 1.03 6.16 2.05
+Currently analyzing 3056.0 to 3600.0
+Number of points= 53814
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 49112.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (49112,49112)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.04 1.03 7.20 1.03
+Currently analyzing 3568.0 to 4095.0
+Number of points= 52272
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 47493.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (47493,47493)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.02 1.03 8.21 0.00
+Writing.
+Done.
+Slit   4 of rtd20148_Rf.fits -- Rows  642 to  778: 
+Reading between: 624 801
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 49184
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 1.0 521.0
+Keeping 49027.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (49027,49027)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [1:521]
+X,Time,Mean,Elapsed,Remaining = 521.00 0.98 0.98 0.98 6.85
+Currently analyzing 496.0 to 1040.0
+Number of points= 50853
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 505.0 1033.0
+Keeping 50821.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (50821,50821)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [505:1033]
+X,Time,Mean,Elapsed,Remaining = 1033.00 0.99 0.98 1.97 5.90
+Currently analyzing 1008.0 to 1552.0
+Number of points= 51018
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1017.0 1545.0
+Keeping 50977.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (50977,50977)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1017:1545]
+X,Time,Mean,Elapsed,Remaining = 1545.00 1.01 0.99 2.97 4.96
+Currently analyzing 1520.0 to 2064.0
+Number of points= 51166
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1529.0 2057.0
+Keeping 51160.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (51160,51160)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1529:2057]
+X,Time,Mean,Elapsed,Remaining = 2057.00 1.01 1.00 3.99 3.99
+Currently analyzing 2032.0 to 2576.0
+Number of points= 51316
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2041.0 2568.0
+Keeping 51313.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (51313,51313)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2041:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.01 1.00 5.00 3.00
+Currently analyzing 2544.0 to 3088.0
+Number of points= 51528
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 51508.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (51508,51508)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.03 1.00 6.03 2.01
+Currently analyzing 3056.0 to 3600.0
+Number of points= 51646
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 51184.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (51184,51184)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.02 1.01 7.05 1.01
+Currently analyzing 3568.0 to 4095.0
+Number of points= 50088
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 48807.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (48807,48807)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.00 1.01 8.06 0.00
+Writing.
+Done.
+Slit   5 of rtd20148_Rf.fits -- Rows  850 to  990: 
+Reading between: 825 1020
+Using 4096 knots in x.
+Reverse Transforming coordinates.
+Reverse Transforming coordinates.
+Setting up apertures.
+Transforming.
+Original gnotsx len= 4097
+Masked   gnotsx len= 4097
+Pulling out pixels.
+Running from 0.0 to 4095.0
+Currently analyzing 0.0 to 528.0
+Number of points= 51302
+Column Coordinate= 0.0 528.0
+Range of output coordinates= 0.0 520.0
+Keeping 49926.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (49926,49926)
+Number of knots (nx) = (529)
+Number of knots (nx) = (537)
+number of wavelength knots= 537
+number of knot coefficients= 1066
+Inserting fitted values [0:520]
+X,Time,Mean,Elapsed,Remaining = 520.00 1.02 1.02 1.02 7.12
+Currently analyzing 496.0 to 1040.0
+Number of points= 53035
+Column Coordinate= 496.0 1040.0
+Range of output coordinates= 504.0 1033.0
+Keeping 52877.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (52877,52877)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [504:1033]
+X,Time,Mean,Elapsed,Remaining = 1033.00 1.05 1.03 2.07 6.20
+Currently analyzing 1008.0 to 1552.0
+Number of points= 53182
+Column Coordinate= 1008.0 1552.0
+Range of output coordinates= 1017.0 1545.0
+Keeping 53170.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53170,53170)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1017:1545]
+X,Time,Mean,Elapsed,Remaining = 1545.00 1.04 1.03 3.10 5.17
+Currently analyzing 1520.0 to 2064.0
+Number of points= 53344
+Column Coordinate= 1520.0 2064.0
+Range of output coordinates= 1529.0 2056.0
+Keeping 53308.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53308,53308)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [1529:2056]
+X,Time,Mean,Elapsed,Remaining = 2056.00 1.06 1.04 4.17 4.17
+Currently analyzing 2032.0 to 2576.0
+Number of points= 53529
+Column Coordinate= 2032.0 2576.0
+Range of output coordinates= 2040.0 2568.0
+Keeping 53514.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53514,53514)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2040:2568]
+X,Time,Mean,Elapsed,Remaining = 2568.00 1.06 1.05 5.23 3.14
+Currently analyzing 2544.0 to 3088.0
+Number of points= 53689
+Column Coordinate= 2544.0 3088.0
+Range of output coordinates= 2552.0 3080.0
+Keeping 53689.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53689,53689)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [2552:3080]
+X,Time,Mean,Elapsed,Remaining = 3080.00 1.07 1.05 6.29 2.10
+Currently analyzing 3056.0 to 3600.0
+Number of points= 53837
+Column Coordinate= 3056.0 3600.0
+Range of output coordinates= 3064.0 3592.0
+Keeping 53782.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (53782,53782)
+Number of knots (nx) = (545)
+Number of knots (nx) = (553)
+number of wavelength knots= 553
+number of knot coefficients= 1098
+Inserting fitted values [3064:3592]
+X,Time,Mean,Elapsed,Remaining = 3592.00 1.05 1.05 7.35 1.05
+Currently analyzing 3568.0 to 4095.0
+Number of points= 52212
+Column Coordinate= 3568.0 4095.0
+Range of output coordinates= 3576.0 4095.0
+Keeping 51415.
+Getting b-spline coefficients with (kx,ky) = (3,1).
+Number of data points (total,edged) = (51415,51415)
+Number of knots (nx) = (528)
+Number of knots (nx) = (536)
+number of wavelength knots= 536
+number of knot coefficients= 1064
+Inserting fitted values [3576:4095]
+X,Time,Mean,Elapsed,Remaining = 4095.00 1.03 1.05 8.38 0.00
+Writing.
+Done.
+efits rtd20148_Bf.fits rtd20148_Bfm.fits 'i1-i2' rtd20148_Bfo.fits
+efits rtd20148_Bf.fits rtd20148_Bfm.fits 'i1-i2' rtd20148_Bfo.fits
+finished
+efits rtd20148_Rf.fits rtd20148_Rfm.fits 'i1-i2' rtd20148_Rfo.fits
+efits rtd20148_Rf.fits rtd20148_Rfm.fits 'i1-i2' rtd20148_Rfo.fits
+finished
+pyrclean rtd20148_Bfo.fits -th 20.0
+pyrclean rtd20148_Bfo.fits -th 20.0
+finished
+Creating rtd20148_Bfoc.fits
+Reading section 1 0 158
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.180/    0.020
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.180/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 48, 0.0001
+CPU Time to complete section=   2.8
+Writing data
+Reading section 2 213 367
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.180/    0.020
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.180/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 53, 0.0001
+CPU Time to complete section=   2.9
+Writing data
+Reading section 3 422 578
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.191/    0.021
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.190/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 40, 0.0001
+CPU Time to complete section=   2.8
+Writing data
+Reading section 4 640 786
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.180/    0.020
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.180/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 130, 0.0002
+CPU Time to complete section=   2.8
+Writing data
+Reading section 5 854 1004
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.180/    0.020
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.180/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.022/    0.112
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.020/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 634, 0.0010
+CPU Time to complete section=   2.9
+Writing data
+pyrclean rtd20148_Rfo.fits -th 25.0
+pyrclean rtd20148_Rfo.fits -th 25.0
+finished
+Creating rtd20148_Rfoc.fits
+Reading section 1 14 146
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.191/    0.021
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.190/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.040/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 66, 0.0001
+CPU Time to complete section=   2.8
+Writing data
+Reading section 2 202 354
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.191/    0.021
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.190/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 150, 0.0002
+CPU Time to complete section=   2.8
+Writing data
+Reading section 3 426 566
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.191/    0.021
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.190/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 637, 0.0011
+CPU Time to complete section=   2.9
+Writing data
+Reading section 4 642 778
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.180/    0.020
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.190/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.067/    0.117
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.070/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 142, 0.0003
+CPU Time to complete section=   2.9
+Writing data
+Reading section 5 850 990
+0 (128, 2048)
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     0.180/    0.020
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     0.180/    0.000
+Stepping 228
+--> Doing  [0, 228]
+--> Estimated time/time remaining=     1.033/    0.113
+--> Doing  [228, 256]
+--> Estimated time/time remaining=     1.030/    0.000
+Splining in x
+Splining in y
+Finalizing template
+Number of pixels changed, frac= 62, 0.0001
+CPU Time to complete section=   2.8
+Writing data
+unrect -wdist -xdist -ydist rtd20148_Bfoc.fits
+unrect -wdist -xdist -ydist rtd20148_Bfoc.fits
+finished
+Using solution: 5 0 5 2 2
+Creating rtd20148_Bfocr.fits from rtd20148_Bfoc.fits
+Slit =   1  -- Rows    0 to  158: 
+Traceback (most recent call last):
+  File "/usr/local/CarPy/dist/bin_oldnumeric/unrect", line 145, in <module>
+    ud0 = max([0,int(ca[nupy] - 2*amax(yfm.row(ca[nupy]-1)))])
+ValueError: cannot convert float NaN to integer
+unrect -wdist -xdist -ydist rtd20148_Rfoc.fits
+unrect -wdist -xdist -ydist rtd20148_Rfoc.fits
+finished
+Traceback (most recent call last):
+  File "/usr/local/CarPy/dist/bin_oldnumeric/unrect", line 53, in <module>
+    dum1,dum2,wsol,dum3,dum4=readsol(image,"w"+str(islit)+"xfm")
+  File "/usr/local/CarPy/dist/lib_oldnumeric/Expector.py", line 76, in readsol
+    efn = eval(f[keyroot+"n"])
+  File "<string>", line 1, in <module>
+NameError: name 'N' is not defined
+BD262606_01_B.fits
+no key
+no key
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mIOError[0m                                   Traceback (most recent call last)
+[0;32m<ipython-input-3-75b7f4b66618>[0m in [0;36m<module>[0;34m()[0m
+[0;32m----> 1[0;31m [0;32mimport[0m [0muvir_lowres_1200[0m[0;34m[0m[0m
+[0m
+[0;32m/Users/mike/anaconda3/envs/iraf27/lib/python2.7/site-packages/pyraf/irafimport.pyc[0m in [0;36m_irafImport[0;34m(name, globals, locals, fromlist, level)[0m
+[1;32m    114[0m               str(level))
+[1;32m    115[0m     [0;32mif[0m [0m_importHasLvlArg[0m[0;34m:[0m[0;34m[0m[0m
+[0;32m--> 116[0;31m         [0mretval[0m [0;34m=[0m [0m_originalImport[0m[0;34m([0m[0mname[0m[0;34m,[0m [0mglobals[0m[0;34m,[0m [0mlocals[0m[0;34m,[0m [0mfromlist[0m[0;34m,[0m [0mlevel[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m    117[0m     [0;32melse[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m    118[0m         [0;31m# we could assert here that level is default, but it's safe to assume[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/Users/mike/Desktop/Deimos-HDD/CarPy/DEIMOS_new_20130610/uvir_lowres_1200.py[0m in [0;36m<module>[0;34m()[0m
+[1;32m     62[0m     [0;32mif[0m [0msciRun[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m     63[0m         [0;34m''' change arguments here to skip calib or not '''[0m[0;34m[0m[0m
+[0;32m---> 64[0;31m         [0mdeimos_carpy[0m[0;34m.[0m[0mdeimos_pipe[0m[0;34m([0m[0mscience[0m[0;34m,[0m [0mflats[0m[0;34m,[0m [0marc[0m[0;34m,[0m [0mdocalib[0m[0;34m=[0m[0mFalse[0m[0;34m,[0m [0mdoscience[0m[0;34m=[0m[0mTrue[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m     65[0m [0;34m[0m[0m
+[1;32m     66[0m     [0mraw_input[0m[0;34m([0m[0;34m'\n\n****************************************\ndone!'[0m[0;34m)[0m[0;34m[0m[0m
+
+[0;32m/Users/mike/Desktop/Deimos-HDD/CarPy/DEIMOS_new_20130610/deimos_carpy.pyc[0m in [0;36mdeimos_pipe[0;34m(science, flats, arc, docalib, doscience)[0m
+[1;32m    243[0m [0;34m[0m[0m
+[1;32m    244[0m     [0;32mif[0m [0mdoscience[0m[0;34m:[0m[0;34m[0m[0m
+[0;32m--> 245[0;31m         [0mdeimos_doscience[0m[0;34m([0m[0mscience[0m[0;34m,[0m [0marc[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m    246[0m [0;34m[0m[0m
+[1;32m    247[0m     [0;32mreturn[0m[0;34m[0m[0m
+
+[0;32m/Users/mike/Desktop/Deimos-HDD/CarPy/DEIMOS_new_20130610/deimos_carpy.pyc[0m in [0;36mdeimos_doscience[0;34m(science, arc)[0m
+[1;32m    376[0m                                                            "CD1_2", "CD2_1"])
+[1;32m    377[0m             shutil.copy("%sfocr.fits" % rsci.split(".")[0],
+[0;32m--> 378[0;31m                         "%s_%02i_R.fits" % (obj, i+1))
+[0m[1;32m    379[0m             update_head("%s_%02i_R.fits" % (obj, i+1), ["EXPTIME", "AIRMASS",
+[1;32m    380[0m                                                         [0;34m"SKYSUB"[0m[0;34m,[0m [0;34m"ONAME"[0m[0;34m,[0m [0;34m"DISPAXIS"[0m[0;34m,[0m[0;34m[0m[0m
+
+[0;32m/Users/mike/anaconda3/envs/iraf27/lib/python2.7/shutil.pyc[0m in [0;36mcopy[0;34m(src, dst)[0m
+[1;32m    131[0m     [0;32mif[0m [0mos[0m[0;34m.[0m[0mpath[0m[0;34m.[0m[0misdir[0m[0;34m([0m[0mdst[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m    132[0m         [0mdst[0m [0;34m=[0m [0mos[0m[0;34m.[0m[0mpath[0m[0;34m.[0m[0mjoin[0m[0;34m([0m[0mdst[0m[0;34m,[0m [0mos[0m[0;34m.[0m[0mpath[0m[0;34m.[0m[0mbasename[0m[0;34m([0m[0msrc[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[0;32m--> 133[0;31m     [0mcopyfile[0m[0;34m([0m[0msrc[0m[0;34m,[0m [0mdst[0m[0;34m)[0m[0;34m[0m[0m
+[0m[1;32m    134[0m     [0mcopymode[0m[0;34m([0m[0msrc[0m[0;34m,[0m [0mdst[0m[0;34m)[0m[0;34m[0m[0m
+[1;32m    135[0m [0;34m[0m[0m
+
+[0;32m/Users/mike/anaconda3/envs/iraf27/lib/python2.7/shutil.pyc[0m in [0;36mcopyfile[0;34m(src, dst)[0m
+[1;32m     94[0m                 [0;32mraise[0m [0mSpecialFileError[0m[0;34m([0m[0;34m"`%s` is a named pipe"[0m [0;34m%[0m [0mfn[0m[0;34m)[0m[0;34m[0m[0m
+[1;32m     95[0m [0;34m[0m[0m
+[0;32m---> 96[0;31m     [0;32mwith[0m [0mopen[0m[0;34m([0m[0msrc[0m[0;34m,[0m [0;34m'rb'[0m[0;34m)[0m [0;32mas[0m [0mfsrc[0m[0;34m:[0m[0;34m[0m[0m
+[0m[1;32m     97[0m         [0;32mwith[0m [0mopen[0m[0;34m([0m[0mdst[0m[0;34m,[0m [0;34m'wb'[0m[0;34m)[0m [0;32mas[0m [0mfdst[0m[0;34m:[0m[0;34m[0m[0m
+[1;32m     98[0m             [0mcopyfileobj[0m[0;34m([0m[0mfsrc[0m[0;34m,[0m [0mfdst[0m[0;34m)[0m[0;34m[0m[0m
+
+[0;31mIOError[0m: [Errno 2] No such file or directory: 'rtd20148_Rfocr.fits'
+
+Do you really want to exit ([y]/n)? 
